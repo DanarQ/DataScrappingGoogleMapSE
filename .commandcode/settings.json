@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(pip:*)",
+      "Shell(set:*)",
+      "Shell(venvScriptspython:*)",
+      "Shell(del:*)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
