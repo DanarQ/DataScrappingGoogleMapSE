@@ -20,8 +20,8 @@ def main():
         help="Output directory (default: output)"
     )
     parser.add_argument(
-        "--zoom", type=int, default=18,
-        help="Google Maps zoom level (default: 18)"
+        "--zoom", type=int, default=20,
+        help="Google Maps zoom level (default: 20)"
     )
     parser.add_argument(
         "--delay", type=float, default=2,

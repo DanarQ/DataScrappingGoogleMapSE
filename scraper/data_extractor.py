@@ -11,9 +11,12 @@ class DataExtractor:
         for result in capture_results:
             building = result["building"]
             entry = building.to_dict()
+            sat_path = result.get("satellite_photo")
+            sv_path = result.get("streetview_photo")
+
             entry["photos"] = {
-                "satellite": result["satellite_photo"],
-                "streetview": result["streetview_photo"],
+                "satellite": sat_path if (sat_path and os.path.exists(sat_path)) else "gak ada",
+                "streetview": sv_path if (sv_path and os.path.exists(sv_path)) else "gak ada",
             }
             buildings_data.append(entry)
 

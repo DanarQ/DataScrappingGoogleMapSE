@@ -4,10 +4,10 @@ Scraper untuk mengambil data koordinat dan foto bangunan dalam suatu area polygo
 
 ## Fitur
 
-- Deteksi bangunan otomatis via OpenStreetMap (Overpass API)
-- Ambil foto **satellite view** dari Google Maps
-- Ambil foto **street view** dari Google Maps
-- Output data lengkap dalam format JSON (koordinat, tipe bangunan, alamat, path foto)
+- Deteksi bangunan otomatis via OpenStreetMap (Overpass API) dengan outline polygon
+- Ambil foto **satellite view** resolusi tinggi dari Google Maps dengan penanda **target ring / crosshair** gedung
+- Ambil foto **street view** dari Google Maps dengan deteksi ketersediaan akurat
+- Output data lengkap dalam format JSON (koordinat, tipe bangunan, alamat, path foto / "gak ada")
 - Area input berupa polygon bebas (koordinat lat/lng)
 
 ## Instalasi
@@ -52,14 +52,14 @@ python main.py --polygon area_example.json
 |------|---------|------------|
 | `--polygon` | (wajib) | Path ke file JSON polygon |
 | `--output` | `output` | Directory output |
-| `--zoom` | `18` | Zoom level Google Maps |
+| `--zoom` | `20` | Zoom level Google Maps (default: 20, fokus ke gedung) |
 | `--delay` | `2` | Delay antar request (detik) |
 | `--no-headless` | `false` | Tampilkan browser (untuk debugging) |
 
 Contoh dengan opsi:
 
 ```bash
-python main.py --polygon area_example.json --output hasil --zoom 19 --delay 3 --no-headless
+python main.py --polygon area_example.json --output hasil --zoom 20 --delay 2 --no-headless
 ```
 
 ## Output

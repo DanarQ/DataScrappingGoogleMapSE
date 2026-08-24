@@ -4,7 +4,9 @@
       "Shell(pip:*)",
       "Shell(set:*)",
       "Shell(venvScriptspython:*)",
-      "Shell(del:*)"
+      "Shell(del:*)",
+      "Shell(dir:*)",
+      "Shell(cd D:\\Pemrograman\\Python\\DataScrappingGoogleMapSE && del test_debug.py test_debug2.py test_debug3.py test_debug4.py test_capture.py debug_page.png debug_satellite.png test_satellite.png test_streetview.png 2>nul)"
     ],
     "deny": [],
     "defaultMode": "default"

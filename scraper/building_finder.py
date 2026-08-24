@@ -21,36 +21,65 @@ class Building:
         }
 
 
+from urllib3.util.retry import Retry
+from requests.adapters import HTTPAdapter
+
+
 class BuildingFinder:
-    OVERPASS_URL = "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+    OVERPASS_ENDPOINTS = [
+        "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+        "https://overpass.kumi.systems/api/interpreter",
+        "https://overpass-api.de/api/interpreter",
+    ]
 
     def __init__(self, polygon_area):
         self.polygon = polygon_area
+        self.session = requests.Session()
+        retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+        adapter = HTTPAdapter(max_retries=retries)
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
 
     def find_buildings(self):
         bbox = self.polygon.get_bounding_box()
         query = (
-            f'[out:json][timeout:120];'
+            f'[out:json][timeout:60];'
             f'('
             f'way["building"]({bbox["min_lat"]},{bbox["min_lng"]},{bbox["max_lat"]},{bbox["max_lng"]});'
             f'relation["building"]({bbox["min_lat"]},{bbox["min_lng"]},{bbox["max_lat"]},{bbox["max_lng"]});'
             f');'
-            f'out center body;'
+            f'out center geom;'
         )
-        print(f"Querying Overpass API for buildings...")
-        resp = requests.post(
-            self.OVERPASS_URL,
-            data={"data": query},
-            timeout=120,
-        )
-        resp.raise_for_status()
-        data = resp.json()
+        print("Querying Overpass API for buildings...")
+        
+        data = None
+        last_err = None
+        for endpoint in self.OVERPASS_ENDPOINTS:
+            try:
+                print(f"Trying Overpass endpoint: {endpoint}")
+                resp = self.session.post(
+                    endpoint,
+                    data={"data": query},
+                    timeout=60,
+                )
+                if resp.status_code == 200:
+                    data = resp.json()
+                    break
+                else:
+                    print(f"Endpoint {endpoint} returned status {resp.status_code}")
+            except Exception as e:
+                print(f"Endpoint {endpoint} failed: {e}")
+                last_err = e
+
+        if not data:
+            raise RuntimeError(f"All Overpass API endpoints failed. Last error: {last_err}")
+
         buildings = []
         for element in data.get("elements", []):
             b = self._parse_element(element)
             if b and self._is_inside_polygon(b.lat, b.lng):
                 buildings.append(b)
-        print(f"Found {len(buildings)} buildings")
+        print(f"Found {len(buildings)} buildings inside polygon")
         return buildings
 
     def _is_inside_polygon(self, lat, lng):

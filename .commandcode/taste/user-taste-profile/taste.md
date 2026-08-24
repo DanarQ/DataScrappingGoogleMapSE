@@ -5,3 +5,7 @@
 - Working on Python web scraping projects, specifically geographic/spatial data extraction. Confidence: 0.9
 - Works on Windows (Windows paths like `D:\Pemrograman\Python\...`). Confidence: 0.95
 - Uses virtual environments (venv) for Python projects. Confidence: 0.85
+- Prefers to defer stuck bugs by documenting them on a task list and moving on, rather than continuing to debug in the moment. Confidence: 0.9
+- Wants README.md documentation with usage instructions for their projects. Confidence: 0.8
+- Visually inspects output quality (e.g., checks screenshots, reports specific visual issues like wrong map layer or dark images). Confidence: 0.85
+- Sometimes switches to English mid-conversation, especially for technical instructions or when giving direct feedback. Confidence: 0.7
