@@ -6,10 +6,9 @@ Scraper untuk mengambil data koordinat dan foto bangunan dalam suatu area polygo
 
 - Deteksi bangunan otomatis via OpenStreetMap (Overpass API) dengan outline polygon
 - Ambil foto **overview satellite map** (1 foto satelit keseluruhan area dengan garis batas poligon dan pin nomor urut seluruh gedung)
-- Ambil foto **satellite view** close-up resolusi tinggi per gedung dengan penanda **target reticle / crosshair**
-- Ambil foto **street view** per gedung dengan deteksi ketersediaan akurat
-- Output data lengkap dalam format JSON (koordinat, index gedung, tipe bangunan, alamat, overview photo, path foto / "gak ada")
+- Output data bersih dan terstruktur dalam format JSON (koordinat, index gedung, tipe bangunan, alamat, polygon outline, overview photo)
 - Area input berupa polygon bebas (koordinat lat/lng)
+- Proses cepat tanpa perlu scraping foto satu per satu
 
 ## Instalasi
 
@@ -53,31 +52,22 @@ python main.py --polygon area_example.json
 |------|---------|------------|
 | `--polygon` | (wajib) | Path ke file JSON polygon |
 | `--output` | `output` | Directory output |
-| `--zoom` | `20` | Zoom level Google Maps untuk foto per gedung (default: 20) |
-| `--delay` | `2` | Delay antar request (detik) |
+| `--zoom` | `None` (auto) | Manual override zoom level Google Maps (default: otomatis dihitung dari bounding box) |
+| `--delay` | `2` | Delay sebelum screenshot (detik) |
 | `--no-headless` | `false` | Tampilkan browser (untuk debugging) |
 
 Contoh dengan opsi:
 
 ```bash
-python main.py --polygon area_example.json --output hasil --zoom 20 --delay 2 --no-headless
+python main.py --polygon area_example.json --output hasil --zoom 17 --delay 2 --no-headless
 ```
 
 ## Output
 
 ```
 output/
-├── photos/
-│   ├── overview_satellite.png    # 1 foto satelit ikhtisar seluruh area (dengan garis poligon & pin nomor)
-│   ├── satellite/
-│   │   ├── building_119427945.png
-│   │   ├── building_119428467.png
-│   │   └── ...
-│   └── streetview/
-│       ├── building_119427945.png
-│       ├── building_119428467.png
-│       └── ...
-└── results.json
+├── overview_satellite.png    # 1 foto satelit ikhtisar seluruh area (dengan garis poligon & pin nomor)
+└── results.json              # Data koordinat, alamat, tipe, & metadata gedung
 ```
 
 ### Format `results.json`
@@ -93,7 +83,7 @@ output/
     "center_lat": -0.0583685,
     "center_lng": 109.3387235
   },
-  "overview_photo": "output/photos/overview_satellite.png",
+  "overview_photo": "output/overview_satellite.png",
   "total_buildings": 52,
   "buildings": [
     {
@@ -103,11 +93,7 @@ output/
       "lng": 109.338940,
       "building_type": "residential",
       "address": "Jl. Gajah Mada, Pontianak",
-      "polygon": [[-0.060165, 109.338940], ...],
-      "photos": {
-        "satellite": "output/photos/satellite/building_119427945.png",
-        "streetview": "gak ada"
-      }
+      "polygon": [[-0.060165, 109.338940], ...]
     }
   ]
 }
@@ -116,24 +102,27 @@ output/
 ## Flow Kerja
 
 ```
-Input Polygon → Overpass API (OpenStreetMap) → Dapat koordinat bangunan
+Input Polygon → Overpass API (OpenStreetMap) → Temukan bangunan & koordinat
                                                     ↓
-                                            Selenium Chrome
+                                             Selenium Chrome
                                                     ↓
-                                    Google Maps satellite view → Screenshot
-                                    Google Maps street view → Screenshot
+                                     Google Maps Satellite View (Overview Area)
                                                     ↓
-                                            Kompilasi ke JSON
+                                     Injeksi Overlay Polygon + Pin Nomor Gedung
+                                                    ↓
+                                             Ambil Screenshot Overview
+                                                    ↓
+                                             Kompilasi ke results.json
 ```
 
 1. **Polygon** dikirim ke Overpass API untuk mencari semua bangunan (`building=*`) di area tersebut
-2. **Selenium** membuka Google Maps untuk setiap koordinat bangunan
-3. **Satellite view** dan **street view** di-screenshot
-4. Semua data dikompilasi ke `results.json`
+2. **Selenium** membuka Google Maps satellite view pada posisi center & zoom area
+3. Garis batas poligon dan pin nomor urut seluruh gedung di-render secara dinamis di atas peta satelit
+4. Screenshot **overview satellite map** disimpan
+5. Semua data metadata gedung dikompilasi ke `results.json`
 
 ## Catatan
 
 - Google Maps perlu **Chrome terinstall** di sistem
-- Street view tidak tersedia di semua lokasi (akan di-skip otomatis)
-- Delay antar request bisa diatur via `--delay` untuk menghindari rate limit
+- Delay screenshot bisa diatur via `--delay`
 - Data bangunan berasal dari **OpenStreetMap** (gratis), foto dari **Google Maps**

@@ -20,12 +20,12 @@ def main():
         help="Output directory (default: output)"
     )
     parser.add_argument(
-        "--zoom", type=int, default=20,
-        help="Google Maps zoom level (default: 20)"
+        "--zoom", type=int, default=None,
+        help="Google Maps zoom level override for overview (default: auto-calculated from polygon area)"
     )
     parser.add_argument(
         "--delay", type=float, default=2,
-        help="Delay between requests in seconds (default: 2)"
+        help="Delay before taking screenshot in seconds (default: 2)"
     )
     parser.add_argument(
         "--no-headless", action="store_true",
@@ -34,7 +34,7 @@ def main():
     args = parser.parse_args()
 
     print("=" * 50)
-    print("Google Maps Building Scraper")
+    print("Google Maps Building Scraper (Overview & JSON)")
     print("=" * 50)
 
     polygon = PolygonArea.from_file(args.polygon)
@@ -53,7 +53,7 @@ def main():
 
     with MapDriver(headless=not args.no_headless) as driver:
         capture = PhotoCapture(driver, delay=args.delay, zoom=args.zoom)
-        results = capture.capture_all(buildings, args.output, polygon=polygon)
+        results = capture.capture_overview(polygon, buildings, args.output)
 
     extractor = DataExtractor(polygon)
     output_path = os.path.join(args.output, "results.json")
@@ -61,6 +61,7 @@ def main():
 
     print(f"\n{'=' * 50}")
     print(f"Done! Total buildings: {data['total_buildings']}")
+    print(f"Overview Map: {data['overview_photo']}")
     print(f"Results: {output_path}")
     print("=" * 50)
 

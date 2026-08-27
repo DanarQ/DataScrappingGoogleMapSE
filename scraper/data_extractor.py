@@ -8,27 +8,28 @@ class DataExtractor:
 
     def compile(self, capture_results, output_path):
         overview_photo = None
-        building_list = []
+        buildings = []
 
         if isinstance(capture_results, dict):
             overview_photo = capture_results.get("overview_photo")
-            building_list = capture_results.get("buildings", [])
+            buildings = capture_results.get("buildings", [])
         else:
-            building_list = capture_results
+            buildings = capture_results
 
         buildings_data = []
-        for idx, result in enumerate(building_list, 1):
-            building = result["building"]
-            entry = {
-                "index": result.get("index", idx),
-                **building.to_dict(),
-            }
-            sat_path = result.get("satellite_photo")
-            sv_path = result.get("streetview_photo")
+        for idx, item in enumerate(buildings, 1):
+            if hasattr(item, "to_dict"):
+                building_dict = item.to_dict()
+            elif isinstance(item, dict) and "building" in item and hasattr(item["building"], "to_dict"):
+                building_dict = item["building"].to_dict()
+            elif isinstance(item, dict):
+                building_dict = item
+            else:
+                building_dict = {}
 
-            entry["photos"] = {
-                "satellite": sat_path if (sat_path and os.path.exists(sat_path)) else "gak ada",
-                "streetview": sv_path if (sv_path and os.path.exists(sv_path)) else "gak ada",
+            entry = {
+                "index": idx,
+                **building_dict,
             }
             buildings_data.append(entry)
 

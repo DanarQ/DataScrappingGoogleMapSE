@@ -60,11 +60,12 @@ class MapDriver:
         zoom = int(math.floor(min(zoom_lng, zoom_lat)))
         return max(14, min(19, zoom))
 
-    def capture_overview(self, polygon, buildings, filepath):
+    def capture_overview(self, polygon, buildings, filepath, zoom=None):
         bbox = polygon.get_bounding_box()
         center_lat = bbox["center_lat"]
         center_lng = bbox["center_lng"]
-        zoom = self.calculate_overview_zoom(polygon)
+        if zoom is None:
+            zoom = self.calculate_overview_zoom(polygon)
 
         url = f"https://www.google.com/maps/@{center_lat},{center_lng},{zoom}z/data=!3m1!1e3"
         print(f"Opening Overview Satellite view (zoom {zoom}) at {center_lat:.6f}, {center_lng:.6f}")
