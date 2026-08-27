@@ -52,23 +52,42 @@ class PhotoCapture:
                     pass
             return None
 
-    def capture_all(self, buildings, output_dir):
-        sat_dir = os.path.join(output_dir, "photos", "satellite")
-        sv_dir = os.path.join(output_dir, "photos", "streetview")
+    def capture_all(self, buildings, output_dir, polygon=None):
+        photos_dir = os.path.join(output_dir, "photos")
+        sat_dir = os.path.join(photos_dir, "satellite")
+        sv_dir = os.path.join(photos_dir, "streetview")
         os.makedirs(sat_dir, exist_ok=True)
         os.makedirs(sv_dir, exist_ok=True)
 
+        # 1. Capture Overview Satellite Map
+        overview_path = None
+        if polygon and buildings:
+            overview_file = os.path.join(photos_dir, "overview_satellite.png")
+            try:
+                print(f"\n[Overview] Capturing Consolidated Satellite Map for {len(buildings)} buildings...")
+                overview_path = self.driver.capture_overview(polygon, buildings, overview_file)
+                time.sleep(self.delay)
+            except Exception as e:
+                print(f"  Overview capture error: {e}")
+                overview_path = None
+
+        # 2. Capture Individual Building Photos
         total = len(buildings)
         results = []
         for i, building in enumerate(buildings, 1):
-            print(f"\n[{i}/{total}] Building {building.osm_id} ({building.lat}, {building.lng})")
+            print(f"\n[{i}/{total}] Building #{i} (OSM {building.osm_id}) ({building.lat:.6f}, {building.lng:.6f})")
             sat_path = self.capture_satellite(building, sat_dir)
             time.sleep(self.delay)
             sv_path = self.capture_streetview(building, sv_dir)
             time.sleep(self.delay)
             results.append({
+                "index": i,
                 "building": building,
                 "satellite_photo": sat_path,
                 "streetview_photo": sv_path,
             })
-        return results
+
+        return {
+            "overview_photo": overview_path,
+            "buildings": results,
+        }

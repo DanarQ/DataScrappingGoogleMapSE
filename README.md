@@ -5,9 +5,10 @@ Scraper untuk mengambil data koordinat dan foto bangunan dalam suatu area polygo
 ## Fitur
 
 - Deteksi bangunan otomatis via OpenStreetMap (Overpass API) dengan outline polygon
-- Ambil foto **satellite view** resolusi tinggi dari Google Maps dengan penanda **target ring / crosshair** gedung
-- Ambil foto **street view** dari Google Maps dengan deteksi ketersediaan akurat
-- Output data lengkap dalam format JSON (koordinat, tipe bangunan, alamat, path foto / "gak ada")
+- Ambil foto **overview satellite map** (1 foto satelit keseluruhan area dengan garis batas poligon dan pin nomor urut seluruh gedung)
+- Ambil foto **satellite view** close-up resolusi tinggi per gedung dengan penanda **target reticle / crosshair**
+- Ambil foto **street view** per gedung dengan deteksi ketersediaan akurat
+- Output data lengkap dalam format JSON (koordinat, index gedung, tipe bangunan, alamat, overview photo, path foto / "gak ada")
 - Area input berupa polygon bebas (koordinat lat/lng)
 
 ## Instalasi
@@ -32,11 +33,11 @@ Contoh `area_example.json`:
 
 ```json
 [
-  [-6.905, 107.610],
-  [-6.905, 107.615],
-  [-6.900, 107.615],
-  [-6.900, 107.610],
-  [-6.905, 107.610]
+  [-0.055970, 109.338531],
+  [-0.057922, 109.341146],
+  [-0.060767, 109.338618],
+  [-0.058578, 109.336301],
+  [-0.055970, 109.338531]
 ]
 ```
 
@@ -52,7 +53,7 @@ python main.py --polygon area_example.json
 |------|---------|------------|
 | `--polygon` | (wajib) | Path ke file JSON polygon |
 | `--output` | `output` | Directory output |
-| `--zoom` | `20` | Zoom level Google Maps (default: 20, fokus ke gedung) |
+| `--zoom` | `20` | Zoom level Google Maps untuk foto per gedung (default: 20) |
 | `--delay` | `2` | Delay antar request (detik) |
 | `--no-headless` | `false` | Tampilkan browser (untuk debugging) |
 
@@ -67,6 +68,7 @@ python main.py --polygon area_example.json --output hasil --zoom 20 --delay 2 --
 ```
 output/
 ├── photos/
+│   ├── overview_satellite.png    # 1 foto satelit ikhtisar seluruh area (dengan garis poligon & pin nomor)
 │   ├── satellite/
 │   │   ├── building_119427945.png
 │   │   ├── building_119428467.png
@@ -82,27 +84,29 @@ output/
 
 ```json
 {
-  "polygon": [[-6.905, 107.61], [-6.905, 107.615], ...],
+  "polygon": [[-0.05597, 109.338531], ...],
   "bounding_box": {
-    "min_lat": -6.905,
-    "max_lat": -6.9,
-    "min_lng": 107.61,
-    "max_lng": 107.615,
-    "center_lat": -6.9025,
-    "center_lng": 107.6125
+    "min_lat": -0.060767,
+    "max_lat": -0.05597,
+    "min_lng": 109.336301,
+    "max_lng": 109.341146,
+    "center_lat": -0.0583685,
+    "center_lng": 109.3387235
   },
-  "total_buildings": 416,
+  "overview_photo": "output/photos/overview_satellite.png",
+  "total_buildings": 52,
   "buildings": [
     {
+      "index": 1,
       "id": "osm_119427945",
-      "lat": -6.9018,
-      "lng": 107.6126,
-      "building_type": "supermarket",
-      "address": "Jl. Asia Afrika, Bandung",
-      "polygon": [[-6.9018, 107.6126], ...],
+      "lat": -0.060165,
+      "lng": 109.338940,
+      "building_type": "residential",
+      "address": "Jl. Gajah Mada, Pontianak",
+      "polygon": [[-0.060165, 109.338940], ...],
       "photos": {
         "satellite": "output/photos/satellite/building_119427945.png",
-        "streetview": "output/photos/streetview/building_119427945.png"
+        "streetview": "gak ada"
       }
     }
   ]

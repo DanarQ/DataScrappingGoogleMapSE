@@ -77,19 +77,27 @@ class BuildingFinder:
         buildings = []
         for element in data.get("elements", []):
             b = self._parse_element(element)
-            if b and self._is_inside_polygon(b.lat, b.lng):
-                buildings.append(b)
+            if b:
+                # Check if building center is inside or if any outline point is inside
+                is_in = self._is_inside_polygon(b.lat, b.lng)
+                if not is_in and b.outline:
+                    is_in = any(self._is_inside_polygon(p[0], p[1]) for p in b.outline)
+                if is_in:
+                    buildings.append(b)
         print(f"Found {len(buildings)} buildings inside polygon")
         return buildings
 
     def _is_inside_polygon(self, lat, lng):
         coords = self.polygon.coordinates
-        n = len(coords)
+        pts = coords[:-1] if (len(coords) > 1 and coords[0] == coords[-1]) else coords
+        n = len(pts)
+        if n < 3:
+            return False
         inside = False
         j = n - 1
         for i in range(n):
-            lat_i, lng_i = coords[i]
-            lat_j, lng_j = coords[j]
+            lat_i, lng_i = pts[i]
+            lat_j, lng_j = pts[j]
             if ((lat_i > lat) != (lat_j > lat)) and (
                 lng < (lng_j - lng_i) * (lat - lat_i) / (lat_j - lat_i) + lng_i
             ):
@@ -98,7 +106,6 @@ class BuildingFinder:
         return inside
 
     def _parse_element(self, element):
-        etype = element.get("type")
         tags = element.get("tags", {})
         building_type = tags.get("building", None)
         if building_type == "yes":
@@ -109,27 +116,31 @@ class BuildingFinder:
                 address_parts.append(tags[key])
         address = ", ".join(address_parts) if address_parts else None
 
-        if etype == "way":
-            center = element.get("center", {})
-            lat = center.get("lat")
-            lng = center.get("lon")
-            if lat is None or lng is None:
-                return None
-            geometry = element.get("geometry", [])
-            outline = [(n["lat"], n["lon"]) for n in geometry]
-        elif etype == "relation":
-            center = element.get("center", {})
-            lat = center.get("lat")
-            lng = center.get("lon")
-            if lat is None or lng is None:
-                return None
-            outline = []
-        else:
-            lat = element.get("lat")
-            lng = element.get("lon")
-            if lat is None or lng is None:
-                return None
-            outline = []
+        outline = []
+        lat = None
+        lng = None
+
+        # 1. Extract outline geometry if available
+        if "geometry" in element and element["geometry"]:
+            outline = [(n["lat"], n["lon"]) for n in element["geometry"]]
+            lat = sum(p[0] for p in outline) / len(outline)
+            lng = sum(p[1] for p in outline) / len(outline)
+
+        # 2. Extract center or bounds fallback
+        if lat is None or lng is None:
+            if "center" in element and element["center"]:
+                lat = element["center"].get("lat")
+                lng = element["center"].get("lon")
+            elif "bounds" in element and element["bounds"]:
+                b = element["bounds"]
+                lat = (b.get("minlat", 0) + b.get("maxlat", 0)) / 2
+                lng = (b.get("minlon", 0) + b.get("maxlon", 0)) / 2
+            elif "lat" in element and "lon" in element:
+                lat = element.get("lat")
+                lng = element.get("lon")
+
+        if lat is None or lng is None:
+            return None
 
         return Building(
             osm_id=element["id"],

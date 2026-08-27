@@ -53,7 +53,7 @@ def main():
 
     with MapDriver(headless=not args.no_headless) as driver:
         capture = PhotoCapture(driver, delay=args.delay, zoom=args.zoom)
-        results = capture.capture_all(buildings, args.output)
+        results = capture.capture_all(buildings, args.output, polygon=polygon)
 
     extractor = DataExtractor(polygon)
     output_path = os.path.join(args.output, "results.json")

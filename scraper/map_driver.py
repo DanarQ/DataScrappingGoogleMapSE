@@ -42,6 +42,163 @@ class MapDriver:
         time.sleep(1)
         print(f"Satellite view at {lat}, {lng} (zoom {zoom})")
 
+    def calculate_overview_zoom(self, polygon, width=1920, height=1080, margin=0.25):
+        import math
+        bbox = polygon.get_bounding_box()
+        d_lat = max(bbox["max_lat"] - bbox["min_lat"], 0.0001)
+        d_lng = max(bbox["max_lng"] - bbox["min_lng"], 0.0001)
+        usable_w = width * (1 - margin)
+        usable_h = height * (1 - margin)
+
+        def lat_to_y(lat_deg):
+            lat_rad = math.radians(lat_deg)
+            return (1.0 - math.log(math.tan(lat_rad) + 1.0 / math.cos(lat_rad)) / math.pi) / 2.0
+
+        d_y = max(abs(lat_to_y(bbox["max_lat"]) - lat_to_y(bbox["min_lat"])), 0.000001)
+        zoom_lng = math.log2((usable_w * 360.0) / (256.0 * d_lng))
+        zoom_lat = math.log2(usable_h / (256.0 * d_y))
+        zoom = int(math.floor(min(zoom_lng, zoom_lat)))
+        return max(14, min(19, zoom))
+
+    def capture_overview(self, polygon, buildings, filepath):
+        bbox = polygon.get_bounding_box()
+        center_lat = bbox["center_lat"]
+        center_lng = bbox["center_lng"]
+        zoom = self.calculate_overview_zoom(polygon)
+
+        url = f"https://www.google.com/maps/@{center_lat},{center_lng},{zoom}z/data=!3m1!1e3"
+        print(f"Opening Overview Satellite view (zoom {zoom}) at {center_lat:.6f}, {center_lng:.6f}")
+        self.driver.get(url)
+        self._dismiss_consent()
+        time.sleep(5)
+
+        poly_points = polygon.coordinates
+        building_pins = [
+            {"index": i + 1, "id": b.osm_id, "lat": b.lat, "lng": b.lng}
+            for i, b in enumerate(buildings)
+        ]
+
+        script = """
+        var center_lat = arguments[0];
+        var center_lng = arguments[1];
+        var zoom = arguments[2];
+        var poly_points = arguments[3];
+        var building_pins = arguments[4];
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        // Hide Google Maps UI
+        var selectors = [
+            '.app-viewcard-strip', '.scene-footer', '.searchbox',
+            '.widget-minimap', '.watermark',
+            '.maps-sprite-settings-butterbar', '#titlecard',
+            '.widget-scene-card', '#vasquette', '.m6QErb',
+            '.app-horizontal-widget-holder', '.scene-footer-container',
+            '#watermark', '.widget-pane-toggle-button-container',
+            '.app-side-panel', '.widget-zoom'
+        ];
+        selectors.forEach(function(sel) {
+            var els = document.querySelectorAll(sel);
+            els.forEach(function(e) { e.style.display = 'none'; });
+        });
+
+        // Remove existing overlay
+        var existing = document.getElementById('overview-overlay');
+        if (existing) existing.remove();
+
+        var container = document.createElement('div');
+        container.id = 'overview-overlay';
+        container.style.position = 'fixed';
+        container.style.top = '0';
+        container.style.left = '0';
+        container.style.width = '100vw';
+        container.style.height = '100vh';
+        container.style.pointerEvents = 'none';
+        container.style.zIndex = '9999999';
+
+        function project(lat, lng) {
+            function latToY(lat_deg) {
+                var lat_rad = lat_deg * Math.PI / 180;
+                return (1 - Math.log(Math.tan(lat_rad) + 1 / Math.cos(lat_rad)) / Math.PI) / 2;
+            }
+            var scale = 256 * Math.pow(2, zoom);
+            var x = (lng + 180) / 360 * scale;
+            var y = latToY(lat) * scale;
+            var cx = (center_lng + 180) / 360 * scale;
+            var cy = latToY(center_lat) * scale;
+            return {
+                x: (width / 2) + (x - cx),
+                y: (height / 2) + (y - cy)
+            };
+        }
+
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('width', width);
+        svg.setAttribute('height', height);
+        svg.style.position = 'absolute';
+        svg.style.top = '0';
+        svg.style.left = '0';
+
+        // 1. Draw Polygon Boundary
+        var polySvgPts = poly_points.map(function(p) {
+            var pt = project(p[0], p[1]);
+            return pt.x + ',' + pt.y;
+        }).join(' ');
+
+        var polygonEl = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+        polygonEl.setAttribute('points', polySvgPts);
+        polygonEl.setAttribute('fill', 'rgba(0, 229, 255, 0.12)');
+        polygonEl.setAttribute('stroke', '#00E5FF');
+        polygonEl.setAttribute('stroke-width', '3');
+        polygonEl.setAttribute('stroke-dasharray', '8 4');
+        svg.appendChild(polygonEl);
+
+        // 2. Draw Building Numbered Pins
+        building_pins.forEach(function(b) {
+            var pt = project(b.lat, b.lng);
+            var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            g.setAttribute('transform', 'translate(' + pt.x + ',' + pt.y + ')');
+
+            // Shadow circle
+            var shadow = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            shadow.setAttribute('r', '14');
+            shadow.setAttribute('fill', 'rgba(0,0,0,0.5)');
+            shadow.setAttribute('cy', '1.5');
+            g.appendChild(shadow);
+
+            // Outer circle
+            var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('r', '12');
+            circle.setAttribute('fill', '#FF3B30');
+            circle.setAttribute('stroke', '#FFFFFF');
+            circle.setAttribute('stroke-width', '2');
+            g.appendChild(circle);
+
+            // Number text
+            var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('text-anchor', 'middle');
+            text.setAttribute('dy', '4.5');
+            text.setAttribute('fill', '#FFFFFF');
+            text.setAttribute('font-size', b.index > 99 ? '9' : (b.index > 9 ? '10' : '12'));
+            text.setAttribute('font-family', 'Arial, sans-serif');
+            text.setAttribute('font-weight', 'bold');
+            text.textContent = b.index;
+            g.appendChild(text);
+
+            svg.appendChild(g);
+        });
+
+        container.appendChild(svg);
+        document.body.appendChild(container);
+        """
+
+        self.driver.execute_script(script, center_lat, center_lng, zoom, poly_points, building_pins)
+        time.sleep(2)
+
+        self.take_screenshot(filepath)
+        print(f"Overview satellite map saved: {filepath}")
+        return filepath
+
     def _hide_ui_and_add_target_marker(self):
         try:
             self.driver.execute_script("""

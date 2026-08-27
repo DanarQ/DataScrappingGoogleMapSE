@@ -7,10 +7,22 @@ class DataExtractor:
         self.polygon = polygon_area
 
     def compile(self, capture_results, output_path):
+        overview_photo = None
+        building_list = []
+
+        if isinstance(capture_results, dict):
+            overview_photo = capture_results.get("overview_photo")
+            building_list = capture_results.get("buildings", [])
+        else:
+            building_list = capture_results
+
         buildings_data = []
-        for result in capture_results:
+        for idx, result in enumerate(building_list, 1):
             building = result["building"]
-            entry = building.to_dict()
+            entry = {
+                "index": result.get("index", idx),
+                **building.to_dict(),
+            }
             sat_path = result.get("satellite_photo")
             sv_path = result.get("streetview_photo")
 
@@ -23,6 +35,7 @@ class DataExtractor:
         data = {
             "polygon": self.polygon.to_dict(),
             "bounding_box": self.polygon.get_bounding_box(),
+            "overview_photo": overview_photo if (overview_photo and os.path.exists(overview_photo)) else "gak ada",
             "total_buildings": len(buildings_data),
             "buildings": buildings_data,
         }
