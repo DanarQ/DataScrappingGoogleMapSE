@@ -29,7 +29,7 @@
     "center_lat": -0.05919520401963817,
     "center_lng": 109.3378559330612
   },
-  "overview_photo": "output\\overview_satellite.png",
+  "overview_photo": "test_output\\overview_satellite.png",
   "total_buildings": 52,
   "buildings": [
     {
@@ -38,7 +38,7 @@
       "lat": -0.06016492,
       "lng": 109.33894015999999,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0601908,
@@ -68,7 +68,7 @@
       "lat": -0.060042899999999996,
       "lng": 109.3388453,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0600379,
@@ -98,7 +98,7 @@
       "lat": -0.060113320000000005,
       "lng": 109.33879148000001,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.060054,
@@ -128,7 +128,7 @@
       "lat": -0.059853979999999994,
       "lng": 109.33900120000001,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.059769,
@@ -158,7 +158,7 @@
       "lat": -0.05992048,
       "lng": 109.33920896,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.059885,
@@ -188,7 +188,7 @@
       "lat": -0.05900292,
       "lng": 109.33796012,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0589663,
@@ -218,7 +218,7 @@
       "lat": -0.059051160000000005,
       "lng": 109.3380457,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.059022,
@@ -248,7 +248,7 @@
       "lat": -0.0592189,
       "lng": 109.33825844,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0591997,
@@ -278,7 +278,7 @@
       "lat": -0.05933126,
       "lng": 109.33839652000002,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0593023,
@@ -308,7 +308,7 @@
       "lat": -0.05938884,
       "lng": 109.33846502000002,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0593573,
@@ -338,7 +338,7 @@
       "lat": -0.05944348000000001,
       "lng": 109.33853472000001,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0594082,
@@ -368,7 +368,7 @@
       "lat": -0.059509400000000004,
       "lng": 109.33859972,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0594719,
@@ -398,7 +398,7 @@
       "lat": -0.05964966000000001,
       "lng": 109.33872455999999,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0596483,
@@ -428,7 +428,7 @@
       "lat": -0.05960276,
       "lng": 109.33863984,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.059598,
@@ -458,7 +458,7 @@
       "lat": -0.05995922,
       "lng": 109.33860741999999,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0599004,
@@ -488,7 +488,7 @@
       "lat": -0.05990322,
       "lng": 109.33869172,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0598535,
@@ -518,7 +518,7 @@
       "lat": -0.059814259999999994,
       "lng": 109.33856302,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0597516,
@@ -548,7 +548,7 @@
       "lat": -0.05975532,
       "lng": 109.33849012,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0596993,
@@ -578,7 +578,7 @@
       "lat": -0.059710620000000006,
       "lng": 109.33841288,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0596436,
@@ -608,7 +608,7 @@
       "lat": -0.05964674,
       "lng": 109.33834612000001,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0595625,
@@ -638,7 +638,7 @@
       "lat": -0.05962188,
       "lng": 109.33824898,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0595605,
@@ -668,7 +668,7 @@
       "lat": -0.05954184,
       "lng": 109.33819476,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0594766,
@@ -698,7 +698,7 @@
       "lat": -0.059477440000000006,
       "lng": 109.33813106,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0594082,
@@ -728,7 +728,7 @@
       "lat": -0.059407140000000004,
       "lng": 109.33807211999999,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0593278,
@@ -758,7 +758,7 @@
       "lat": -0.05936422,
       "lng": 109.33799102,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0592989,
@@ -788,7 +788,7 @@
       "lat": -0.05930154,
       "lng": 109.33793146000001,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0592205,
@@ -818,7 +818,7 @@
       "lat": -0.0592428,
       "lng": 109.33786258,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0591843,
@@ -848,7 +848,7 @@
       "lat": -0.05919556,
       "lng": 109.33776487999998,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0591266,
@@ -878,7 +878,7 @@
       "lat": -0.059093660000000006,
       "lng": 109.33765294,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0590166,
@@ -908,7 +908,7 @@
       "lat": -0.05902938,
       "lng": 109.33757381999999,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0589596,
@@ -938,7 +938,7 @@
       "lat": -0.05896928,
       "lng": 109.33750075999998,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.058902,
@@ -968,7 +968,7 @@
       "lat": -0.0588965,
       "lng": 109.33745146000001,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0588396,
@@ -998,7 +998,7 @@
       "lat": -0.0588463,
       "lng": 109.337367,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0587913,
@@ -1028,7 +1028,7 @@
       "lat": -0.0587931,
       "lng": 109.33729726000001,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.058741,
@@ -1058,7 +1058,7 @@
       "lat": -0.058735380000000004,
       "lng": 109.33722148,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0586733,
@@ -1088,7 +1088,7 @@
       "lat": -0.05867940000000001,
       "lng": 109.33715333999999,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0586291,
@@ -1118,7 +1118,7 @@
       "lat": -0.058620479999999996,
       "lng": 109.33708414,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0585566,
@@ -1148,7 +1148,7 @@
       "lat": -0.05855934,
       "lng": 109.33701900000001,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0584943,
@@ -1178,7 +1178,7 @@
       "lat": -0.05852310000000001,
       "lng": 109.3369561,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0585003,
@@ -1208,7 +1208,7 @@
       "lat": -0.05844458,
       "lng": 109.33689523999999,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0584158,
@@ -1238,7 +1238,7 @@
       "lat": -0.05839046,
       "lng": 109.33683132000002,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0583615,
@@ -1268,7 +1268,7 @@
       "lat": -0.05833762,
       "lng": 109.33670174,
       "building_type": null,
-      "address": null,
+      "address": "Gang Ikhlas, Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0582831,
@@ -1298,7 +1298,7 @@
       "lat": -0.05823663999999999,
       "lng": 109.33664131999998,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 78121, Indonesia",
       "polygon": [
         [
           -0.0581724,
@@ -1328,7 +1328,7 @@
       "lat": -0.05876538,
       "lng": 109.33769748,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0587276,
@@ -1358,7 +1358,7 @@
       "lat": -0.058717160000000004,
       "lng": 109.3376174,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0586961,
@@ -1388,7 +1388,7 @@
       "lat": -0.05865568,
       "lng": 109.33755140000001,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0586324,
@@ -1418,7 +1418,7 @@
       "lat": -0.058606099999999994,
       "lng": 109.3374748,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0585768,
@@ -1448,7 +1448,7 @@
       "lat": -0.058496040000000006,
       "lng": 109.33733952,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0584688,
@@ -1478,7 +1478,7 @@
       "lat": -0.05844128,
       "lng": 109.33725682,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0584111,
@@ -1508,7 +1508,7 @@
       "lat": -0.05837164,
       "lng": 109.33718842,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0583488,
@@ -1538,7 +1538,7 @@
       "lat": -0.058313000000000004,
       "lng": 109.33713212,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0582804,
@@ -1568,7 +1568,7 @@
       "lat": -0.0582021,
       "lng": 109.33698798,
       "building_type": null,
-      "address": null,
+      "address": "Parit Tokaya, Pontianak Selatan, Pontianak, Kalimantan Barat, 79124, Indonesia",
       "polygon": [
         [
           -0.0581798,

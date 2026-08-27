@@ -110,11 +110,14 @@ class BuildingFinder:
         building_type = tags.get("building", None)
         if building_type == "yes":
             building_type = None
-        address_parts = []
-        for key in ["addr:street", "addr:housenumber", "addr:city", "addr:suburb"]:
-            if key in tags:
-                address_parts.append(tags[key])
-        address = ", ".join(address_parts) if address_parts else None
+        if "addr:full" in tags:
+            address = tags["addr:full"]
+        else:
+            address_parts = []
+            for key in ["addr:street", "addr:housenumber", "addr:suburb", "addr:city"]:
+                if key in tags:
+                    address_parts.append(tags[key])
+            address = ", ".join(address_parts) if address_parts else None
 
         outline = []
         lat = None

@@ -4,6 +4,7 @@ import sys
 
 from scraper.polygon import PolygonArea
 from scraper.building_finder import BuildingFinder
+from scraper.geocoder import ReverseGeocoder
 from scraper.map_driver import MapDriver
 from scraper.photo_capture import PhotoCapture
 from scraper.data_extractor import DataExtractor
@@ -31,6 +32,14 @@ def main():
         "--no-headless", action="store_true",
         help="Run browser in visible mode (for debugging)"
     )
+    parser.add_argument(
+        "--no-geocode", action="store_true",
+        help="Disable reverse geocoding of building addresses"
+    )
+    parser.add_argument(
+        "--geocode-delay", type=float, default=1.0,
+        help="Delay between reverse geocoding requests in seconds (default: 1.0)"
+    )
     args = parser.parse_args()
 
     print("=" * 50)
@@ -48,6 +57,10 @@ def main():
     if not buildings:
         print("No buildings found in the specified area.")
         sys.exit(0)
+
+    if not args.no_geocode:
+        geocoder = ReverseGeocoder(delay=args.geocode_delay)
+        buildings = geocoder.geocode_buildings(buildings)
 
     os.makedirs(args.output, exist_ok=True)
 

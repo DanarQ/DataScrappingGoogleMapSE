@@ -5,8 +5,9 @@ Scraper untuk mengambil data koordinat dan foto bangunan dalam suatu area polygo
 ## Fitur
 
 - Deteksi bangunan otomatis via OpenStreetMap (Overpass API) dengan outline polygon
+- **Reverse Geocoding otomatis** (OpenStreetMap Nominatim) untuk mengisi alamat lengkap (jalan, kelurahan, kecamatan, kota) per gedung
 - Ambil foto **overview satellite map** (1 foto satelit keseluruhan area dengan garis batas poligon dan pin nomor urut seluruh gedung)
-- Output data bersih dan terstruktur dalam format JSON (koordinat, index gedung, tipe bangunan, alamat, polygon outline, overview photo)
+- Output data bersih dan terstruktur dalam format JSON (koordinat, index gedung, tipe bangunan, alamat lengkap, polygon outline, overview photo)
 - Area input berupa polygon bebas (koordinat lat/lng)
 - Proses cepat tanpa perlu scraping foto satu per satu
 
@@ -54,6 +55,8 @@ python main.py --polygon area_example.json
 | `--output` | `output` | Directory output |
 | `--zoom` | `None` (auto) | Manual override zoom level Google Maps (default: otomatis dihitung dari bounding box) |
 | `--delay` | `2` | Delay sebelum screenshot (detik) |
+| `--no-geocode` | `false` | Nonaktifkan reverse geocoding alamat gedung |
+| `--geocode-delay` | `1.0` | Delay antar request geocoding (detik, default 1.0 sesuai ketentuan Nominatim) |
 | `--no-headless` | `false` | Tampilkan browser (untuk debugging) |
 
 Contoh dengan opsi:
