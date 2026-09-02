@@ -1,0 +1,3576 @@
+{
+  "metadata": {
+    "sls_index": 1,
+    "idsls": "61010100020001",
+    "nmsls": "RT 01 RW 01 DUSUN HILIR",
+    "kode_kab": "6101",
+    "nmkab": "SAMBAS",
+    "kdkec": "010",
+    "nmkec": "SELAKAU",
+    "kddesa": "002",
+    "nmdesa": "SUNGAI DAUN",
+    "folder_name": "6101_61010100020001"
+  },
+  "polygon": [
+    [
+      [
+        1.01738761664783,
+        108.982704621708
+      ],
+      [
+        1.02065802006999,
+        108.981840741558
+      ],
+      [
+        1.02258601800001,
+        108.987402473
+      ],
+      [
+        1.02290023400008,
+        108.988749942
+      ],
+      [
+        1.02291907800001,
+        108.988829507
+      ],
+      [
+        1.02358829300004,
+        108.991655083
+      ],
+      [
+        1.01866407500006,
+        108.993167831
+      ],
+      [
+        1.018623255,
+        108.993044149
+      ],
+      [
+        1.01849729600003,
+        108.99266251
+      ],
+      [
+        1.01838202300007,
+        108.992255308
+      ],
+      [
+        1.01832806500003,
+        108.99195604
+      ],
+      [
+        1.01820543300004,
+        108.991436
+      ],
+      [
+        1.01816128600006,
+        108.991107296
+      ],
+      [
+        1.01808280200002,
+        108.990695189
+      ],
+      [
+        1.01794545400002,
+        108.989913902
+      ],
+      [
+        1.01779829600002,
+        108.989393862
+      ],
+      [
+        1.01763397000002,
+        108.988854198
+      ],
+      [
+        1.01755058100002,
+        108.988515681
+      ],
+      [
+        1.01739361200004,
+        108.988147729
+      ],
+      [
+        1.01730041200004,
+        108.987877897
+      ],
+      [
+        1.017123823,
+        108.987637501
+      ],
+      [
+        1.01707967500005,
+        108.987372575
+      ],
+      [
+        1.01692270700003,
+        108.987058588
+      ],
+      [
+        1.01672649600005,
+        108.986566758
+      ],
+      [
+        1.01660877000004,
+        108.986306738
+      ],
+      [
+        1.01655481200002,
+        108.985904443
+      ],
+      [
+        1.01630709600005,
+        108.985152593
+      ],
+      [
+        1.01603240100005,
+        108.984357815
+      ],
+      [
+        1.01572827500008,
+        108.983705312
+      ],
+      [
+        1.01565469600007,
+        108.983307923
+      ],
+      [
+        1.01559827924437,
+        108.983213881336
+      ],
+      [
+        1.01738761664783,
+        108.982704621708
+      ]
+    ]
+  ],
+  "bounding_box": {
+    "min_lat": 1.01559827924437,
+    "max_lat": 1.02358829300004,
+    "min_lng": 108.981840741558,
+    "max_lng": 108.993167831,
+    "center_lat": 1.019593286122205,
+    "center_lng": 108.987504286279
+  },
+  "overview_photo": "output\\6101_61010100020001\\overview_satellite.png",
+  "total_buildings": 113,
+  "buildings": [
+    {
+      "index": 1,
+      "id": "osm_577307735",
+      "lat": 1.0157363400000001,
+      "lng": 108.98332164000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0157503,
+          108.983278
+        ],
+        [
+          1.0157825,
+          108.9833611
+        ],
+        [
+          1.0157154,
+          108.9833871
+        ],
+        [
+          1.0156832,
+          108.983304
+        ],
+        [
+          1.0157503,
+          108.983278
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "id": "osm_577307736",
+      "lat": 1.015778,
+      "lng": 108.98354408,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0157879,
+          108.9835086
+        ],
+        [
+          1.0158039,
+          108.9835891
+        ],
+        [
+          1.0157632,
+          108.9835973
+        ],
+        [
+          1.0157471,
+          108.9835168
+        ],
+        [
+          1.0157879,
+          108.9835086
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "id": "osm_577307737",
+      "lat": 1.0157555600000001,
+      "lng": 108.98343124,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0157852,
+          108.9833879
+        ],
+        [
+          1.015805,
+          108.9834748
+        ],
+        [
+          1.0157111,
+          108.9834962
+        ],
+        [
+          1.0156913,
+          108.9834094
+        ],
+        [
+          1.0157852,
+          108.9833879
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "id": "osm_577307749",
+      "lat": 1.01592132,
+      "lng": 108.98391237999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0159327,
+          108.9838922
+        ],
+        [
+          1.0159472,
+          108.9839212
+        ],
+        [
+          1.0159042,
+          108.9839426
+        ],
+        [
+          1.0158898,
+          108.9839137
+        ],
+        [
+          1.0159327,
+          108.9838922
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "id": "osm_577307750",
+      "lat": 1.01596752,
+      "lng": 108.98397426,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0159756,
+          108.9839432
+        ],
+        [
+          1.0160051,
+          108.9839753
+        ],
+        [
+          1.0159554,
+          108.9840209
+        ],
+        [
+          1.0159259,
+          108.9839887
+        ],
+        [
+          1.0159756,
+          108.9839432
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "id": "osm_577307751",
+      "lat": 1.01603412,
+      "lng": 108.98407477999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0160748,
+          108.9840397
+        ],
+        [
+          1.0160911,
+          108.9840845
+        ],
+        [
+          1.0159731,
+          108.9841274
+        ],
+        [
+          1.0159568,
+          108.9840826
+        ],
+        [
+          1.0160748,
+          108.9840397
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "id": "osm_577307752",
+      "lat": 1.0160997999999999,
+      "lng": 108.98413264000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0161231,
+          108.9841014
+        ],
+        [
+          1.0161426,
+          108.9841419
+        ],
+        [
+          1.0160649,
+          108.9841795
+        ],
+        [
+          1.0160453,
+          108.984139
+        ],
+        [
+          1.0161231,
+          108.9841014
+        ]
+      ]
+    },
+    {
+      "index": 8,
+      "id": "osm_577307753",
+      "lat": 1.0161338,
+      "lng": 108.9842087,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.016166,
+          108.9841765
+        ],
+        [
+          1.0161821,
+          108.9842248
+        ],
+        [
+          1.0160855,
+          108.984257
+        ],
+        [
+          1.0160694,
+          108.9842087
+        ],
+        [
+          1.016166,
+          108.9841765
+        ]
+      ]
+    },
+    {
+      "index": 9,
+      "id": "osm_577307754",
+      "lat": 1.0161646000000002,
+      "lng": 108.98431808000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162116,
+          108.9842838
+        ],
+        [
+          1.0162255,
+          108.9843266
+        ],
+        [
+          1.0160941,
+          108.9843695
+        ],
+        [
+          1.0160802,
+          108.9843267
+        ],
+        [
+          1.0162116,
+          108.9842838
+        ]
+      ]
+    },
+    {
+      "index": 10,
+      "id": "osm_577307755",
+      "lat": 1.01624288,
+      "lng": 108.98436168,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162598,
+          108.9843374
+        ],
+        [
+          1.0162738,
+          108.9843793
+        ],
+        [
+          1.0162175,
+          108.9843981
+        ],
+        [
+          1.0162035,
+          108.9843562
+        ],
+        [
+          1.0162598,
+          108.9843374
+        ]
+      ]
+    },
+    {
+      "index": 11,
+      "id": "osm_577307756",
+      "lat": 1.0161639599999999,
+      "lng": 108.98381094000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162196,
+          108.9838117
+        ],
+        [
+          1.016107,
+          108.9838654
+        ],
+        [
+          1.0160805,
+          108.9838098
+        ],
+        [
+          1.0161931,
+          108.9837561
+        ],
+        [
+          1.0162196,
+          108.9838117
+        ]
+      ]
+    },
+    {
+      "index": 12,
+      "id": "osm_577307757",
+      "lat": 1.01623734,
+      "lng": 108.98389947999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162545,
+          108.98386
+        ],
+        [
+          1.0162867,
+          108.9839131
+        ],
+        [
+          1.0162116,
+          108.9839587
+        ],
+        [
+          1.0161794,
+          108.9839056
+        ],
+        [
+          1.0162545,
+          108.98386
+        ]
+      ]
+    },
+    {
+      "index": 13,
+      "id": "osm_577307758",
+      "lat": 1.0163509000000002,
+      "lng": 108.98406276,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163591,
+          108.9840156
+        ],
+        [
+          1.0164057,
+          108.9840933
+        ],
+        [
+          1.0163386,
+          108.9841335
+        ],
+        [
+          1.016292,
+          108.9840558
+        ],
+        [
+          1.0163591,
+          108.9840156
+        ]
+      ]
+    },
+    {
+      "index": 14,
+      "id": "osm_577307759",
+      "lat": 1.0163100799999998,
+      "lng": 108.98395998000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163269,
+          108.9839405
+        ],
+        [
+          1.0163376,
+          108.98397
+        ],
+        [
+          1.0162849,
+          108.9839892
+        ],
+        [
+          1.0162741,
+          108.9839597
+        ],
+        [
+          1.0163269,
+          108.9839405
+        ]
+      ]
+    },
+    {
+      "index": 15,
+      "id": "osm_577307760",
+      "lat": 1.01644912,
+      "lng": 108.98424276,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0164663,
+          108.984206
+        ],
+        [
+          1.0164877,
+          108.9842791
+        ],
+        [
+          1.0164233,
+          108.9842979
+        ],
+        [
+          1.016402,
+          108.9842248
+        ],
+        [
+          1.0164663,
+          108.984206
+        ]
+      ]
+    },
+    {
+      "index": 16,
+      "id": "osm_577307761",
+      "lat": 1.01650014,
+      "lng": 108.9843557,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0165361,
+          108.9843589
+        ],
+        [
+          1.016461,
+          108.9843884
+        ],
+        [
+          1.0164462,
+          108.9843509
+        ],
+        [
+          1.0165213,
+          108.9843214
+        ],
+        [
+          1.0165361,
+          108.9843589
+        ]
+      ]
+    },
+    {
+      "index": 17,
+      "id": "osm_577307762",
+      "lat": 1.0161538,
+      "lng": 108.98370814,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.016166,
+          108.9836723
+        ],
+        [
+          1.0161945,
+          108.9837351
+        ],
+        [
+          1.0161355,
+          108.9837619
+        ],
+        [
+          1.016107,
+          108.9836991
+        ],
+        [
+          1.016166,
+          108.9836723
+        ]
+      ]
+    },
+    {
+      "index": 18,
+      "id": "osm_577307763",
+      "lat": 1.01614062,
+      "lng": 108.98353712000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0161687,
+          108.9834926
+        ],
+        [
+          1.016179,
+          108.9835959
+        ],
+        [
+          1.0160985,
+          108.9836039
+        ],
+        [
+          1.0160882,
+          108.9835006
+        ],
+        [
+          1.0161687,
+          108.9834926
+        ]
+      ]
+    },
+    {
+      "index": 19,
+      "id": "osm_577307764",
+      "lat": 1.01591036,
+      "lng": 108.98334135999998,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0158656,
+          108.9832941
+        ],
+        [
+          1.0159346,
+          108.9832728
+        ],
+        [
+          1.0159775,
+          108.9834123
+        ],
+        [
+          1.0159085,
+          108.9834335
+        ],
+        [
+          1.0158656,
+          108.9832941
+        ]
+      ]
+    },
+    {
+      "index": 20,
+      "id": "osm_577307765",
+      "lat": 1.01603736,
+      "lng": 108.98326734,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0160587,
+          108.983219
+        ],
+        [
+          1.0160855,
+          108.9833182
+        ],
+        [
+          1.0160054,
+          108.9833399
+        ],
+        [
+          1.0159785,
+          108.9832406
+        ],
+        [
+          1.0160587,
+          108.983219
+        ]
+      ]
+    },
+    {
+      "index": 21,
+      "id": "osm_577307766",
+      "lat": 1.0161267200000001,
+      "lng": 108.98326538,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0160936,
+          108.9832109
+        ],
+        [
+          1.0161416,
+          108.9831996
+        ],
+        [
+          1.0161764,
+          108.9833471
+        ],
+        [
+          1.0161284,
+          108.9833584
+        ],
+        [
+          1.0160936,
+          108.9832109
+        ]
+      ]
+    },
+    {
+      "index": 22,
+      "id": "osm_577307767",
+      "lat": 1.0162397,
+      "lng": 108.98329392000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162733,
+          108.9833075
+        ],
+        [
+          1.0162035,
+          108.9833263
+        ],
+        [
+          1.0161893,
+          108.9832735
+        ],
+        [
+          1.0162591,
+          108.9832548
+        ],
+        [
+          1.0162733,
+          108.9833075
+        ]
+      ]
+    },
+    {
+      "index": 23,
+      "id": "osm_577307768",
+      "lat": 1.01625674,
+      "lng": 108.98319178,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163001,
+          108.9831573
+        ],
+        [
+          1.0163151,
+          108.9832033
+        ],
+        [
+          1.0161917,
+          108.9832435
+        ],
+        [
+          1.0161767,
+          108.9831975
+        ],
+        [
+          1.0163001,
+          108.9831573
+        ]
+      ]
+    },
+    {
+      "index": 24,
+      "id": "osm_577307769",
+      "lat": 1.0164198599999998,
+      "lng": 108.98319434,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163752,
+          108.9831465
+        ],
+        [
+          1.0164493,
+          108.9831266
+        ],
+        [
+          1.0164869,
+          108.9832661
+        ],
+        [
+          1.0164127,
+          108.983286
+        ],
+        [
+          1.0163752,
+          108.9831465
+        ]
+      ]
+    },
+    {
+      "index": 25,
+      "id": "osm_577307812",
+      "lat": 1.0165032,
+      "lng": 108.98316910000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0164717,
+          108.9831063
+        ],
+        [
+          1.0165129,
+          108.983097
+        ],
+        [
+          1.0165504,
+          108.9832633
+        ],
+        [
+          1.0165093,
+          108.9832726
+        ],
+        [
+          1.0164717,
+          108.9831063
+        ]
+      ]
+    },
+    {
+      "index": 26,
+      "id": "osm_577307813",
+      "lat": 1.0165807199999999,
+      "lng": 108.98313388000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0165468,
+          108.9830714
+        ],
+        [
+          1.0165994,
+          108.9830613
+        ],
+        [
+          1.0166316,
+          108.9832276
+        ],
+        [
+          1.016579,
+          108.9832377
+        ],
+        [
+          1.0165468,
+          108.9830714
+        ]
+      ]
+    },
+    {
+      "index": 27,
+      "id": "osm_577307814",
+      "lat": 1.01661098,
+      "lng": 108.98301488,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0166219,
+          108.9829856
+        ],
+        [
+          1.0166375,
+          108.9830481
+        ],
+        [
+          1.0165946,
+          108.9830588
+        ],
+        [
+          1.016579,
+          108.9829963
+        ],
+        [
+          1.0166219,
+          108.9829856
+        ]
+      ]
+    },
+    {
+      "index": 28,
+      "id": "osm_577307826",
+      "lat": 1.0166867800000001,
+      "lng": 108.98314862,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0166487,
+          108.9830822
+        ],
+        [
+          1.0167144,
+          108.9830712
+        ],
+        [
+          1.0167439,
+          108.9832483
+        ],
+        [
+          1.0166782,
+          108.9832592
+        ],
+        [
+          1.0166487,
+          108.9830822
+        ]
+      ]
+    },
+    {
+      "index": 29,
+      "id": "osm_577307827",
+      "lat": 1.0167952599999999,
+      "lng": 108.98303178,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0168257,
+          108.9829963
+        ],
+        [
+          1.0168354,
+          108.9830742
+        ],
+        [
+          1.0167496,
+          108.983085
+        ],
+        [
+          1.0167399,
+          108.9830071
+        ],
+        [
+          1.0168257,
+          108.9829963
+        ]
+      ]
+    },
+    {
+      "index": 30,
+      "id": "osm_577307828",
+      "lat": 1.01688674,
+      "lng": 108.98309108000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0168579,
+          108.9830232
+        ],
+        [
+          1.0168978,
+          108.9830159
+        ],
+        [
+          1.01693,
+          108.9831929
+        ],
+        [
+          1.0168901,
+          108.9832002
+        ],
+        [
+          1.0168579,
+          108.9830232
+        ]
+      ]
+    },
+    {
+      "index": 31,
+      "id": "osm_577307829",
+      "lat": 1.0169947000000001,
+      "lng": 108.98305780000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0170161,
+          108.9829856
+        ],
+        [
+          1.0170483,
+          108.9831492
+        ],
+        [
+          1.0169626,
+          108.9831661
+        ],
+        [
+          1.0169304,
+          108.9830025
+        ],
+        [
+          1.0170161,
+          108.9829856
+        ]
+      ]
+    },
+    {
+      "index": 32,
+      "id": "osm_577307830",
+      "lat": 1.01709896,
+      "lng": 108.9830868,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0170751,
+          108.9830366
+        ],
+        [
+          1.0171267,
+          108.9830334
+        ],
+        [
+          1.0171347,
+          108.9831621
+        ],
+        [
+          1.0170832,
+          108.9831653
+        ],
+        [
+          1.0170751,
+          108.9830366
+        ]
+      ]
+    },
+    {
+      "index": 33,
+      "id": "osm_577307831",
+      "lat": 1.01709266,
+      "lng": 108.98290738,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0171261,
+          108.982873
+        ],
+        [
+          1.017131,
+          108.9829536
+        ],
+        [
+          1.0170425,
+          108.982959
+        ],
+        [
+          1.0170376,
+          108.9828783
+        ],
+        [
+          1.0171261,
+          108.982873
+        ]
+      ]
+    },
+    {
+      "index": 34,
+      "id": "osm_577307832",
+      "lat": 1.01722412,
+      "lng": 108.98305846000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0172575,
+          108.9830741
+        ],
+        [
+          1.017177,
+          108.9830795
+        ],
+        [
+          1.0171741,
+          108.983035
+        ],
+        [
+          1.0172545,
+          108.9830296
+        ],
+        [
+          1.0172575,
+          108.9830741
+        ]
+      ]
+    },
+    {
+      "index": 35,
+      "id": "osm_577307833",
+      "lat": 1.01720416,
+      "lng": 108.98296314,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0172253,
+          108.9829293
+        ],
+        [
+          1.0172395,
+          108.9830005
+        ],
+        [
+          1.0171725,
+          108.9830139
+        ],
+        [
+          1.0171582,
+          108.9829427
+        ],
+        [
+          1.0172253,
+          108.9829293
+        ]
+      ]
+    },
+    {
+      "index": 36,
+      "id": "osm_577307834",
+      "lat": 1.01733338,
+      "lng": 108.98294519999999,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0172977,
+          108.9829132
+        ],
+        [
+          1.0173735,
+          108.982902
+        ],
+        [
+          1.0173869,
+          108.9829932
+        ],
+        [
+          1.0173111,
+          108.9830044
+        ],
+        [
+          1.0172977,
+          108.9829132
+        ]
+      ]
+    },
+    {
+      "index": 37,
+      "id": "osm_577307835",
+      "lat": 1.0174505,
+      "lng": 108.98293944,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0174559,
+          108.9828703
+        ],
+        [
+          1.0175015,
+          108.9830258
+        ],
+        [
+          1.0174424,
+          108.9830432
+        ],
+        [
+          1.0173968,
+          108.9828876
+        ],
+        [
+          1.0174559,
+          108.9828703
+        ]
+      ]
+    },
+    {
+      "index": 38,
+      "id": "osm_577307836",
+      "lat": 1.0175784399999999,
+      "lng": 108.98319618000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0175954,
+          108.9831653
+        ],
+        [
+          1.017612,
+          108.9832264
+        ],
+        [
+          1.017553,
+          108.9832425
+        ],
+        [
+          1.0175364,
+          108.9831814
+        ],
+        [
+          1.0175954,
+          108.9831653
+        ]
+      ]
+    },
+    {
+      "index": 39,
+      "id": "osm_577307837",
+      "lat": 1.01756606,
+      "lng": 108.9830833,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0175793,
+          108.983058
+        ],
+        [
+          1.0175927,
+          108.983109
+        ],
+        [
+          1.0175462,
+          108.9831212
+        ],
+        [
+          1.0175328,
+          108.9830703
+        ],
+        [
+          1.0175793,
+          108.983058
+        ]
+      ]
+    },
+    {
+      "index": 40,
+      "id": "osm_577307838",
+      "lat": 1.0175781000000002,
+      "lng": 108.98288038000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0175552,
+          108.9828515
+        ],
+        [
+          1.0175964,
+          108.9828432
+        ],
+        [
+          1.0176125,
+          108.9829237
+        ],
+        [
+          1.0175712,
+          108.982932
+        ],
+        [
+          1.0175552,
+          108.9828515
+        ]
+      ]
+    },
+    {
+      "index": 41,
+      "id": "osm_577307839",
+      "lat": 1.01766246,
+      "lng": 108.98287253999999,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0176651,
+          108.9828086
+        ],
+        [
+          1.0176946,
+          108.9829615
+        ],
+        [
+          1.0176585,
+          108.9829684
+        ],
+        [
+          1.017629,
+          108.9828156
+        ],
+        [
+          1.0176651,
+          108.9828086
+        ]
+      ]
+    },
+    {
+      "index": 42,
+      "id": "osm_577307840",
+      "lat": 1.01776606,
+      "lng": 108.98281340000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0177724,
+          108.9827496
+        ],
+        [
+          1.0178072,
+          108.9828971
+        ],
+        [
+          1.0177566,
+          108.9829091
+        ],
+        [
+          1.0177217,
+          108.9827616
+        ],
+        [
+          1.0177724,
+          108.9827496
+        ]
+      ]
+    },
+    {
+      "index": 43,
+      "id": "osm_577307841",
+      "lat": 1.01793426,
+      "lng": 108.98276168,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0179601,
+          108.9827281
+        ],
+        [
+          1.0179706,
+          108.9828013
+        ],
+        [
+          1.0178955,
+          108.9828121
+        ],
+        [
+          1.017885,
+          108.9827388
+        ],
+        [
+          1.0179601,
+          108.9827281
+        ]
+      ]
+    },
+    {
+      "index": 44,
+      "id": "osm_577307842",
+      "lat": 1.01802344,
+      "lng": 108.98275332,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0179896,
+          108.9827093
+        ],
+        [
+          1.0180608,
+          108.9827013
+        ],
+        [
+          1.0180742,
+          108.9828193
+        ],
+        [
+          1.018003,
+          108.9828274
+        ],
+        [
+          1.0179896,
+          108.9827093
+        ]
+      ]
+    },
+    {
+      "index": 45,
+      "id": "osm_577307843",
+      "lat": 1.0180485,
+      "lng": 108.9826492,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0180352,
+          108.9826316
+        ],
+        [
+          1.0180604,
+          108.9826274
+        ],
+        [
+          1.0180685,
+          108.9826756
+        ],
+        [
+          1.0180432,
+          108.9826798
+        ],
+        [
+          1.0180352,
+          108.9826316
+        ]
+      ]
+    },
+    {
+      "index": 46,
+      "id": "osm_577307844",
+      "lat": 1.0181215000000001,
+      "lng": 108.98274432000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0180861,
+          108.9826986
+        ],
+        [
+          1.0181397,
+          108.9826841
+        ],
+        [
+          1.0181746,
+          108.9828129
+        ],
+        [
+          1.018121,
+          108.9828274
+        ],
+        [
+          1.0180861,
+          108.9826986
+        ]
+      ]
+    },
+    {
+      "index": 47,
+      "id": "osm_577307867",
+      "lat": 1.01936376,
+      "lng": 108.98238856,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0193251,
+          108.9823607
+        ],
+        [
+          1.0194083,
+          108.9823472
+        ],
+        [
+          1.0194218,
+          108.9824304
+        ],
+        [
+          1.0193385,
+          108.9824438
+        ],
+        [
+          1.0193251,
+          108.9823607
+        ]
+      ]
+    },
+    {
+      "index": 48,
+      "id": "osm_577307868",
+      "lat": 1.0194709,
+      "lng": 108.982271,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0194968,
+          108.9822346
+        ],
+        [
+          1.0195179,
+          108.9822961
+        ],
+        [
+          1.0194321,
+          108.9823256
+        ],
+        [
+          1.0194109,
+          108.9822641
+        ],
+        [
+          1.0194968,
+          108.9822346
+        ]
+      ]
+    },
+    {
+      "index": 49,
+      "id": "osm_577307869",
+      "lat": 1.0195100799999999,
+      "lng": 108.982347,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.019537,
+          108.982307
+        ],
+        [
+          1.0195609,
+          108.9823748
+        ],
+        [
+          1.0194697,
+          108.982407
+        ],
+        [
+          1.0194458,
+          108.9823392
+        ],
+        [
+          1.019537,
+          108.982307
+        ]
+      ]
+    },
+    {
+      "index": 50,
+      "id": "osm_577307871",
+      "lat": 1.0196231,
+      "lng": 108.9826866,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0196416,
+          108.9826664
+        ],
+        [
+          1.0196463,
+          108.9827115
+        ],
+        [
+          1.0195954,
+          108.9827169
+        ],
+        [
+          1.0195906,
+          108.9826718
+        ],
+        [
+          1.0196416,
+          108.9826664
+        ]
+      ]
+    },
+    {
+      "index": 51,
+      "id": "osm_577307873",
+      "lat": 1.01983326,
+      "lng": 108.98221905999999,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0198508,
+          108.9821595
+        ],
+        [
+          1.0198901,
+          108.9822816
+        ],
+        [
+          1.019807,
+          108.9823084
+        ],
+        [
+          1.0197676,
+          108.9821863
+        ],
+        [
+          1.0198508,
+          108.9821595
+        ]
+      ]
+    },
+    {
+      "index": 52,
+      "id": "osm_577307875",
+      "lat": 1.0199131000000001,
+      "lng": 108.98218360000001,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0198803,
+          108.9821166
+        ],
+        [
+          1.0199194,
+          108.9821071
+        ],
+        [
+          1.0199623,
+          108.9822841
+        ],
+        [
+          1.0199232,
+          108.9822936
+        ],
+        [
+          1.0198803,
+          108.9821166
+        ]
+      ]
+    },
+    {
+      "index": 53,
+      "id": "osm_577307877",
+      "lat": 1.0199935199999999,
+      "lng": 108.9821307,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0199956,
+          108.9821112
+        ],
+        [
+          1.0200117,
+          108.9821514
+        ],
+        [
+          1.0199904,
+          108.98216
+        ],
+        [
+          1.0199743,
+          108.9821197
+        ],
+        [
+          1.0199956,
+          108.9821112
+        ]
+      ]
+    },
+    {
+      "index": 54,
+      "id": "osm_577307878",
+      "lat": 1.02000608,
+      "lng": 108.98221238,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0200278,
+          108.9821863
+        ],
+        [
+          1.0200352,
+          108.9822434
+        ],
+        [
+          1.0199735,
+          108.9822515
+        ],
+        [
+          1.0199661,
+          108.9821944
+        ],
+        [
+          1.0200278,
+          108.9821863
+        ]
+      ]
+    },
+    {
+      "index": 55,
+      "id": "osm_577307879",
+      "lat": 1.02017986,
+      "lng": 108.98208251999999,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0202048,
+          108.9820522
+        ],
+        [
+          1.0202175,
+          108.9821119
+        ],
+        [
+          1.0201425,
+          108.982128
+        ],
+        [
+          1.0201297,
+          108.9820683
+        ],
+        [
+          1.0202048,
+          108.9820522
+        ]
+      ]
+    },
+    {
+      "index": 56,
+      "id": "osm_577307880",
+      "lat": 1.02020856,
+      "lng": 108.98217045999999,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0202343,
+          108.9821327
+        ],
+        [
+          1.0202531,
+          108.9822057
+        ],
+        [
+          1.02017,
+          108.9822271
+        ],
+        [
+          1.0201511,
+          108.9821541
+        ],
+        [
+          1.0202343,
+          108.9821327
+        ]
+      ]
+    },
+    {
+      "index": 57,
+      "id": "osm_577307881",
+      "lat": 1.0207688799999999,
+      "lng": 108.98195281999999,
+      "building_type": null,
+      "address": "Mainroad Singkawang To Sambas, Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0208135,
+          108.98191
+        ],
+        [
+          1.0208334,
+          108.9819795
+        ],
+        [
+          1.0207019,
+          108.982017
+        ],
+        [
+          1.0206821,
+          108.9819476
+        ],
+        [
+          1.0208135,
+          108.98191
+        ]
+      ]
+    },
+    {
+      "index": 58,
+      "id": "osm_577797993",
+      "lat": 1.01859962,
+      "lng": 108.99153678,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0186279,
+          108.9915499
+        ],
+        [
+          1.0185596,
+          108.9915542
+        ],
+        [
+          1.0185572,
+          108.9915171
+        ],
+        [
+          1.0186255,
+          108.9915128
+        ],
+        [
+          1.0186279,
+          108.9915499
+        ]
+      ]
+    },
+    {
+      "index": 59,
+      "id": "osm_577797994",
+      "lat": 1.01863184,
+      "lng": 108.99159788,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.018644,
+          108.991574
+        ],
+        [
+          1.0186476,
+          108.9916315
+        ],
+        [
+          1.0186136,
+          108.9916337
+        ],
+        [
+          1.01861,
+          108.9915762
+        ],
+        [
+          1.018644,
+          108.991574
+        ]
+      ]
+    },
+    {
+      "index": 60,
+      "id": "osm_577797995",
+      "lat": 1.01854796,
+      "lng": 108.99163080000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0185984,
+          108.9915982
+        ],
+        [
+          1.0185972,
+          108.9916814
+        ],
+        [
+          1.0184723,
+          108.9916797
+        ],
+        [
+          1.0184735,
+          108.9915965
+        ],
+        [
+          1.0185984,
+          108.9915982
+        ]
+      ]
+    },
+    {
+      "index": 61,
+      "id": "osm_577797996",
+      "lat": 1.01869576,
+      "lng": 108.99189532,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0187056,
+          108.9918771
+        ],
+        [
+          1.0187084,
+          108.9919209
+        ],
+        [
+          1.018681,
+          108.9919226
+        ],
+        [
+          1.0186782,
+          108.9918789
+        ],
+        [
+          1.0187056,
+          108.9918771
+        ]
+      ]
+    },
+    {
+      "index": 62,
+      "id": "osm_577797997",
+      "lat": 1.01859764,
+      "lng": 108.991819,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0186413,
+          108.9918423
+        ],
+        [
+          1.0185363,
+          108.9918489
+        ],
+        [
+          1.0185321,
+          108.9917841
+        ],
+        [
+          1.0186372,
+          108.9917774
+        ],
+        [
+          1.0186413,
+          108.9918423
+        ]
+      ]
+    },
+    {
+      "index": 63,
+      "id": "osm_577797998",
+      "lat": 1.01860278,
+      "lng": 108.99191476000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0186493,
+          108.9919361
+        ],
+        [
+          1.0185368,
+          108.9919433
+        ],
+        [
+          1.018533,
+          108.9918827
+        ],
+        [
+          1.0186455,
+          108.9918756
+        ],
+        [
+          1.0186493,
+          108.9919361
+        ]
+      ]
+    },
+    {
+      "index": 64,
+      "id": "osm_577798006",
+      "lat": 1.0184752400000001,
+      "lng": 108.99131228000002,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0185072,
+          108.9912924
+        ],
+        [
+          1.0185065,
+          108.9913432
+        ],
+        [
+          1.0184273,
+          108.9913421
+        ],
+        [
+          1.018428,
+          108.9912913
+        ],
+        [
+          1.0185072,
+          108.9912924
+        ]
+      ]
+    },
+    {
+      "index": 65,
+      "id": "osm_577798007",
+      "lat": 1.0184885399999999,
+      "lng": 108.99123841999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0185528,
+          108.9912575
+        ],
+        [
+          1.0183958,
+          108.9912675
+        ],
+        [
+          1.0183922,
+          108.9912098
+        ],
+        [
+          1.0185491,
+          108.9911998
+        ],
+        [
+          1.0185528,
+          108.9912575
+        ]
+      ]
+    },
+    {
+      "index": 66,
+      "id": "osm_577798008",
+      "lat": 1.01847028,
+      "lng": 108.99114005999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0185286,
+          108.99111
+        ],
+        [
+          1.0185276,
+          108.9911871
+        ],
+        [
+          1.0183828,
+          108.9911851
+        ],
+        [
+          1.0183838,
+          108.9911081
+        ],
+        [
+          1.0185286,
+          108.99111
+        ]
+      ]
+    },
+    {
+      "index": 67,
+      "id": "osm_577798010",
+      "lat": 1.01851326,
+      "lng": 108.99102158000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.018534,
+          108.9909947
+        ],
+        [
+          1.0185331,
+          108.9910626
+        ],
+        [
+          1.0184821,
+          108.9910619
+        ],
+        [
+          1.0184831,
+          108.990994
+        ],
+        [
+          1.018534,
+          108.9909947
+        ]
+      ]
+    },
+    {
+      "index": 68,
+      "id": "osm_577798011",
+      "lat": 1.018312825,
+      "lng": 108.99003505,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0182913,
+          108.9900101
+        ],
+        [
+          1.0182929,
+          108.9898938
+        ],
+        [
+          1.0183785,
+          108.989895
+        ],
+        [
+          1.0183763,
+          108.9900553
+        ],
+        [
+          1.0183782,
+          108.9900846
+        ],
+        [
+          1.0183759,
+          108.9900847
+        ],
+        [
+          1.0183758,
+          108.9900935
+        ],
+        [
+          1.0182902,
+          108.9900923
+        ],
+        [
+          1.0182902,
+          108.9900902
+        ],
+        [
+          1.0182092,
+          108.9900953
+        ],
+        [
+          1.0182041,
+          108.9900157
+        ],
+        [
+          1.0182913,
+          108.9900101
+        ]
+      ]
+    },
+    {
+      "index": 69,
+      "id": "osm_577798019",
+      "lat": 1.01845064,
+      "lng": 108.99086114000002,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0185206,
+          108.9908364
+        ],
+        [
+          1.0185173,
+          108.9909063
+        ],
+        [
+          1.0183457,
+          108.9908982
+        ],
+        [
+          1.018349,
+          108.9908284
+        ],
+        [
+          1.0185206,
+          108.9908364
+        ]
+      ]
+    },
+    {
+      "index": 70,
+      "id": "osm_577798020",
+      "lat": 1.01844746,
+      "lng": 108.99072301999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0184804,
+          108.9906862
+        ],
+        [
+          1.0184946,
+          108.9907595
+        ],
+        [
+          1.0183981,
+          108.9907782
+        ],
+        [
+          1.0183838,
+          108.990705
+        ],
+        [
+          1.0184804,
+          108.9906862
+        ]
+      ]
+    },
+    {
+      "index": 71,
+      "id": "osm_577798021",
+      "lat": 1.0181118000000002,
+      "lng": 108.9905352,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0181264,
+          108.9904958
+        ],
+        [
+          1.0181398,
+          108.990587
+        ],
+        [
+          1.0180899,
+          108.9905943
+        ],
+        [
+          1.0180765,
+          108.9905031
+        ],
+        [
+          1.0181264,
+          108.9904958
+        ]
+      ]
+    },
+    {
+      "index": 72,
+      "id": "osm_577798022",
+      "lat": 1.01808174,
+      "lng": 108.99036799999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0180888,
+          108.9903295
+        ],
+        [
+          1.0181076,
+          108.990418
+        ],
+        [
+          1.0180711,
+          108.9904258
+        ],
+        [
+          1.0180524,
+          108.9903372
+        ],
+        [
+          1.0180888,
+          108.9903295
+        ]
+      ]
+    },
+    {
+      "index": 73,
+      "id": "osm_577798023",
+      "lat": 1.0180077600000002,
+      "lng": 108.99010026,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0180164,
+          108.9900854
+        ],
+        [
+          1.0180243,
+          108.9901145
+        ],
+        [
+          1.0179948,
+          108.9901225
+        ],
+        [
+          1.0179869,
+          108.9900935
+        ],
+        [
+          1.0180164,
+          108.9900854
+        ]
+      ]
+    },
+    {
+      "index": 74,
+      "id": "osm_577798024",
+      "lat": 1.01847112,
+      "lng": 108.99018616000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0184857,
+          108.9901766
+        ],
+        [
+          1.0184804,
+          108.9902061
+        ],
+        [
+          1.0184492,
+          108.9902005
+        ],
+        [
+          1.0184546,
+          108.990171
+        ],
+        [
+          1.0184857,
+          108.9901766
+        ]
+      ]
+    },
+    {
+      "index": 75,
+      "id": "osm_577798025",
+      "lat": 1.01837308,
+      "lng": 108.99012723999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.018416,
+          108.9901122
+        ],
+        [
+          1.018416,
+          108.9901498
+        ],
+        [
+          1.0183087,
+          108.9901498
+        ],
+        [
+          1.0183087,
+          108.9901122
+        ],
+        [
+          1.018416,
+          108.9901122
+        ]
+      ]
+    },
+    {
+      "index": 76,
+      "id": "osm_579119084",
+      "lat": 1.01686052,
+      "lng": 108.98681198,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0168337,
+          108.9867863
+        ],
+        [
+          1.0168498,
+          108.9867754
+        ],
+        [
+          1.0169007,
+          108.9868505
+        ],
+        [
+          1.0168847,
+          108.9868614
+        ],
+        [
+          1.0168337,
+          108.9867863
+        ]
+      ]
+    },
+    {
+      "index": 77,
+      "id": "osm_579119086",
+      "lat": 1.01645332,
+      "lng": 108.98545822000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0164261,
+          108.9854237
+        ],
+        [
+          1.0164727,
+          108.9854134
+        ],
+        [
+          1.0164941,
+          108.98551
+        ],
+        [
+          1.0164476,
+          108.9855203
+        ],
+        [
+          1.0164261,
+          108.9854237
+        ]
+      ]
+    },
+    {
+      "index": 78,
+      "id": "osm_579119087",
+      "lat": 1.01647924,
+      "lng": 108.98528185999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.01652,
+          108.9852574
+        ],
+        [
+          1.0165281,
+          108.9852944
+        ],
+        [
+          1.0164181,
+          108.9853185
+        ],
+        [
+          1.01641,
+          108.9852816
+        ],
+        [
+          1.01652,
+          108.9852574
+        ]
+      ]
+    },
+    {
+      "index": 79,
+      "id": "osm_579119088",
+      "lat": 1.01645924,
+      "lng": 108.98522066000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0165012,
+          108.9852226
+        ],
+        [
+          1.016402,
+          108.985244
+        ],
+        [
+          1.0163963,
+          108.9852178
+        ],
+        [
+          1.0164955,
+          108.9851963
+        ],
+        [
+          1.0165012,
+          108.9852226
+        ]
+      ]
+    },
+    {
+      "index": 80,
+      "id": "osm_579119089",
+      "lat": 1.01646954,
+      "lng": 108.9851046,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0164771,
+          108.9850697
+        ],
+        [
+          1.0165039,
+          108.9851394
+        ],
+        [
+          1.0164582,
+          108.985157
+        ],
+        [
+          1.0164314,
+          108.9850872
+        ],
+        [
+          1.0164771,
+          108.9850697
+        ]
+      ]
+    },
+    {
+      "index": 81,
+      "id": "osm_579119090",
+      "lat": 1.01639086,
+      "lng": 108.98513756,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163644,
+          108.9851126
+        ],
+        [
+          1.0164091,
+          108.9850999
+        ],
+        [
+          1.0164305,
+          108.985175
+        ],
+        [
+          1.0163859,
+          108.9851877
+        ],
+        [
+          1.0163644,
+          108.9851126
+        ]
+      ]
+    },
+    {
+      "index": 82,
+      "id": "osm_579119091",
+      "lat": 1.0162742200000001,
+      "lng": 108.98489918,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162464,
+          108.9848819
+        ],
+        [
+          1.0162891,
+          108.9848634
+        ],
+        [
+          1.0163159,
+          108.9849251
+        ],
+        [
+          1.0162733,
+          108.9849436
+        ],
+        [
+          1.0162464,
+          108.9848819
+        ]
+      ]
+    },
+    {
+      "index": 83,
+      "id": "osm_579119092",
+      "lat": 1.0162748000000001,
+      "lng": 108.98479234000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163054,
+          108.9847773
+        ],
+        [
+          1.0163066,
+          108.9848122
+        ],
+        [
+          1.0162289,
+          108.9848149
+        ],
+        [
+          1.0162277,
+          108.98478
+        ],
+        [
+          1.0163054,
+          108.9847773
+        ]
+      ]
+    },
+    {
+      "index": 84,
+      "id": "osm_579119093",
+      "lat": 1.01626792,
+      "lng": 108.98470861999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0163054,
+          108.9846835
+        ],
+        [
+          1.0163136,
+          108.9847276
+        ],
+        [
+          1.0162117,
+          108.9847463
+        ],
+        [
+          1.0162035,
+          108.9847022
+        ],
+        [
+          1.0163054,
+          108.9846835
+        ]
+      ]
+    },
+    {
+      "index": 85,
+      "id": "osm_579119094",
+      "lat": 1.0162668799999999,
+      "lng": 108.98462652,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162893,
+          108.984611
+        ],
+        [
+          1.0162949,
+          108.9846364
+        ],
+        [
+          1.0162332,
+          108.9846498
+        ],
+        [
+          1.0162277,
+          108.9846244
+        ],
+        [
+          1.0162893,
+          108.984611
+        ]
+      ]
+    },
+    {
+      "index": 86,
+      "id": "osm_579119095",
+      "lat": 1.0162404600000001,
+      "lng": 108.98446917999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0162813,
+          108.9844367
+        ],
+        [
+          1.0162945,
+          108.9844884
+        ],
+        [
+          1.0161792,
+          108.9845179
+        ],
+        [
+          1.016166,
+          108.9844662
+        ],
+        [
+          1.0162813,
+          108.9844367
+        ]
+      ]
+    },
+    {
+      "index": 87,
+      "id": "osm_579119112",
+      "lat": 1.0170764399999999,
+      "lng": 108.98719258000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0171019,
+          108.9871243
+        ],
+        [
+          1.0171502,
+          108.987253
+        ],
+        [
+          1.0170382,
+          108.987295
+        ],
+        [
+          1.01699,
+          108.9871663
+        ],
+        [
+          1.0171019,
+          108.9871243
+        ]
+      ]
+    },
+    {
+      "index": 88,
+      "id": "osm_579119114",
+      "lat": 1.01730328,
+      "lng": 108.98770157999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0173272,
+          108.9876768
+        ],
+        [
+          1.0173398,
+          108.9877146
+        ],
+        [
+          1.0172674,
+          108.9877388
+        ],
+        [
+          1.0172548,
+          108.9877009
+        ],
+        [
+          1.0173272,
+          108.9876768
+        ]
+      ]
+    },
+    {
+      "index": 89,
+      "id": "osm_579119116",
+      "lat": 1.01756452,
+      "lng": 108.9881588,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0175981,
+          108.9881274
+        ],
+        [
+          1.0176134,
+          108.988163
+        ],
+        [
+          1.0175142,
+          108.9882059
+        ],
+        [
+          1.0174988,
+          108.9881703
+        ],
+        [
+          1.0175981,
+          108.9881274
+        ]
+      ]
+    },
+    {
+      "index": 90,
+      "id": "osm_579119117",
+      "lat": 1.0176002,
+      "lng": 108.98828054,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.017641,
+          108.9882454
+        ],
+        [
+          1.017657,
+          108.9882957
+        ],
+        [
+          1.017539,
+          108.9883332
+        ],
+        [
+          1.017523,
+          108.988283
+        ],
+        [
+          1.017641,
+          108.9882454
+        ]
+      ]
+    },
+    {
+      "index": 91,
+      "id": "osm_579119118",
+      "lat": 1.0176152,
+      "lng": 108.98836594,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.017649,
+          108.9883286
+        ],
+        [
+          1.0176691,
+          108.9883844
+        ],
+        [
+          1.0175645,
+          108.988422
+        ],
+        [
+          1.0175444,
+          108.9883661
+        ],
+        [
+          1.017649,
+          108.9883286
+        ]
+      ]
+    },
+    {
+      "index": 92,
+      "id": "osm_579119120",
+      "lat": 1.0178616,
+      "lng": 108.9885339,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0179118,
+          108.9885083
+        ],
+        [
+          1.0179177,
+          108.9885562
+        ],
+        [
+          1.0177863,
+          108.9885723
+        ],
+        [
+          1.0177804,
+          108.9885244
+        ],
+        [
+          1.0179118,
+          108.9885083
+        ]
+      ]
+    },
+    {
+      "index": 93,
+      "id": "osm_579119121",
+      "lat": 1.0178891399999999,
+      "lng": 108.98863398,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0179333,
+          108.9886022
+        ],
+        [
+          1.0179436,
+          108.9886602
+        ],
+        [
+          1.0178229,
+          108.9886817
+        ],
+        [
+          1.0178126,
+          108.9886236
+        ],
+        [
+          1.0179333,
+          108.9886022
+        ]
+      ]
+    },
+    {
+      "index": 94,
+      "id": "osm_579119122",
+      "lat": 1.0178727,
+      "lng": 108.98879200000002,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0179199,
+          108.9887336
+        ],
+        [
+          1.0178904,
+          108.9888957
+        ],
+        [
+          1.0178019,
+          108.9888796
+        ],
+        [
+          1.0178314,
+          108.9887175
+        ],
+        [
+          1.0179199,
+          108.9887336
+        ]
+      ]
+    },
+    {
+      "index": 95,
+      "id": "osm_579119125",
+      "lat": 1.0179962599999999,
+      "lng": 108.98903422000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0180298,
+          108.9890045
+        ],
+        [
+          1.0180398,
+          108.9890627
+        ],
+        [
+          1.0179459,
+          108.9890788
+        ],
+        [
+          1.017936,
+          108.9890206
+        ],
+        [
+          1.0180298,
+          108.9890045
+        ]
+      ]
+    },
+    {
+      "index": 96,
+      "id": "osm_579119126",
+      "lat": 1.01801122,
+      "lng": 108.98914208000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0180298,
+          108.9891171
+        ],
+        [
+          1.0180397,
+          108.9891688
+        ],
+        [
+          1.0179833,
+          108.9891795
+        ],
+        [
+          1.0179735,
+          108.9891279
+        ],
+        [
+          1.0180298,
+          108.9891171
+        ]
+      ]
+    },
+    {
+      "index": 97,
+      "id": "osm_579119129",
+      "lat": 1.01817784,
+      "lng": 108.98935326,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0182497,
+          108.9893183
+        ],
+        [
+          1.0182551,
+          108.9893923
+        ],
+        [
+          1.01807,
+          108.9894057
+        ],
+        [
+          1.0180647,
+          108.9893317
+        ],
+        [
+          1.0182497,
+          108.9893183
+        ]
+      ]
+    },
+    {
+      "index": 98,
+      "id": "osm_579119131",
+      "lat": 1.01715756,
+      "lng": 108.98676866000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0171743,
+          108.9867407
+        ],
+        [
+          1.0171941,
+          108.9867757
+        ],
+        [
+          1.0171324,
+          108.9868106
+        ],
+        [
+          1.0171127,
+          108.9867756
+        ],
+        [
+          1.0171743,
+          108.9867407
+        ]
+      ]
+    },
+    {
+      "index": 99,
+      "id": "osm_579119133",
+      "lat": 1.01711818,
+      "lng": 108.9866489,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0171448,
+          108.9865985
+        ],
+        [
+          1.0171694,
+          108.986703
+        ],
+        [
+          1.0170782,
+          108.9867245
+        ],
+        [
+          1.0170537,
+          108.98662
+        ],
+        [
+          1.0171448,
+          108.9865985
+        ]
+      ]
+    },
+    {
+      "index": 100,
+      "id": "osm_579119134",
+      "lat": 1.01695958,
+      "lng": 108.98634555999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0170134,
+          108.9863089
+        ],
+        [
+          1.0170183,
+          108.9863925
+        ],
+        [
+          1.0168788,
+          108.9864006
+        ],
+        [
+          1.016874,
+          108.9863169
+        ],
+        [
+          1.0170134,
+          108.9863089
+        ]
+      ]
+    },
+    {
+      "index": 101,
+      "id": "osm_579119135",
+      "lat": 1.01683872,
+      "lng": 108.98607924000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0168579,
+          108.9860648
+        ],
+        [
+          1.0168636,
+          108.9860875
+        ],
+        [
+          1.0168099,
+          108.9861009
+        ],
+        [
+          1.0168043,
+          108.9860782
+        ],
+        [
+          1.0168579,
+          108.9860648
+        ]
+      ]
+    },
+    {
+      "index": 102,
+      "id": "osm_579119136",
+      "lat": 1.01704446,
+      "lng": 108.98610984,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0170617,
+          108.9860594
+        ],
+        [
+          1.0170778,
+          108.9861774
+        ],
+        [
+          1.0170186,
+          108.9861855
+        ],
+        [
+          1.0170025,
+          108.9860675
+        ],
+        [
+          1.0170617,
+          108.9860594
+        ]
+      ]
+    },
+    {
+      "index": 103,
+      "id": "osm_579119137",
+      "lat": 1.0168991,
+      "lng": 108.98614548,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0169357,
+          108.9861158
+        ],
+        [
+          1.0169488,
+          108.9861552
+        ],
+        [
+          1.0168442,
+          108.98619
+        ],
+        [
+          1.0168311,
+          108.9861506
+        ],
+        [
+          1.0169357,
+          108.9861158
+        ]
+      ]
+    },
+    {
+      "index": 104,
+      "id": "osm_579119138",
+      "lat": 1.01683562,
+      "lng": 108.98582638,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0168713,
+          108.9857912
+        ],
+        [
+          1.016884,
+          108.9858604
+        ],
+        [
+          1.0167821,
+          108.9858791
+        ],
+        [
+          1.0167694,
+          108.98581
+        ],
+        [
+          1.0168713,
+          108.9857912
+        ]
+      ]
+    },
+    {
+      "index": 105,
+      "id": "osm_579119139",
+      "lat": 1.01676776,
+      "lng": 108.9856434,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0167962,
+          108.9856008
+        ],
+        [
+          1.016819,
+          108.9856805
+        ],
+        [
+          1.0167251,
+          108.9857073
+        ],
+        [
+          1.0167023,
+          108.9856276
+        ],
+        [
+          1.0167962,
+          108.9856008
+        ]
+      ]
+    },
+    {
+      "index": 106,
+      "id": "osm_579119140",
+      "lat": 1.0167453,
+      "lng": 108.98543686000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0167855,
+          108.9853969
+        ],
+        [
+          1.0168057,
+          108.9854539
+        ],
+        [
+          1.016685,
+          108.9854968
+        ],
+        [
+          1.0166648,
+          108.9854398
+        ],
+        [
+          1.0167855,
+          108.9853969
+        ]
+      ]
+    },
+    {
+      "index": 107,
+      "id": "osm_579119141",
+      "lat": 1.01668556,
+      "lng": 108.98507676,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0167104,
+          108.9850509
+        ],
+        [
+          1.0167234,
+          108.9850914
+        ],
+        [
+          1.0166483,
+          108.9851155
+        ],
+        [
+          1.0166353,
+          108.9850751
+        ],
+        [
+          1.0167104,
+          108.9850509
+        ]
+      ]
+    },
+    {
+      "index": 108,
+      "id": "osm_579119142",
+      "lat": 1.01660406,
+      "lng": 108.98498092,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0166273,
+          108.984949
+        ],
+        [
+          1.016647,
+          108.9849966
+        ],
+        [
+          1.0165692,
+          108.9850288
+        ],
+        [
+          1.0165495,
+          108.9849812
+        ],
+        [
+          1.0166273,
+          108.984949
+        ]
+      ]
+    },
+    {
+      "index": 109,
+      "id": "osm_579119143",
+      "lat": 1.01659806,
+      "lng": 108.9848722,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0166487,
+          108.984831
+        ],
+        [
+          1.0166669,
+          108.9848857
+        ],
+        [
+          1.0165221,
+          108.984934
+        ],
+        [
+          1.0165039,
+          108.9848793
+        ],
+        [
+          1.0166487,
+          108.984831
+        ]
+      ]
+    },
+    {
+      "index": 110,
+      "id": "osm_579119144",
+      "lat": 1.0165982599999999,
+      "lng": 108.98471781999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0166165,
+          108.9846835
+        ],
+        [
+          1.0166165,
+          108.9847693
+        ],
+        [
+          1.0165709,
+          108.9847693
+        ],
+        [
+          1.0165709,
+          108.9846835
+        ],
+        [
+          1.0166165,
+          108.9846835
+        ]
+      ]
+    },
+    {
+      "index": 111,
+      "id": "osm_579119145",
+      "lat": 1.01649456,
+      "lng": 108.98476434,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0165146,
+          108.9847183
+        ],
+        [
+          1.0165441,
+          108.9848068
+        ],
+        [
+          1.0164645,
+          108.9848334
+        ],
+        [
+          1.016435,
+          108.9847449
+        ],
+        [
+          1.0165146,
+          108.9847183
+        ]
+      ]
+    },
+    {
+      "index": 112,
+      "id": "osm_579119146",
+      "lat": 1.01652612,
+      "lng": 108.98460623999999,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0165683,
+          108.9845788
+        ],
+        [
+          1.0165782,
+          108.9846179
+        ],
+        [
+          1.0164629,
+          108.9846474
+        ],
+        [
+          1.0164529,
+          108.9846083
+        ],
+        [
+          1.0165683,
+          108.9845788
+        ]
+      ]
+    },
+    {
+      "index": 113,
+      "id": "osm_579119147",
+      "lat": 1.01652218,
+      "lng": 108.98448020000001,
+      "building_type": null,
+      "address": "Sungai Daun, Selakau, Sambas, Kalimantan Barat, 79151, Indonesia",
+      "polygon": [
+        [
+          1.0165548,
+          108.984434
+        ],
+        [
+          1.0165832,
+          108.9845066
+        ],
+        [
+          1.0164732,
+          108.9845495
+        ],
+        [
+          1.0164449,
+          108.9844769
+        ],
+        [
+          1.0165548,
+          108.984434
+        ]
+      ]
+    }
+  ]
+}

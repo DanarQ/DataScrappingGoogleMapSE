@@ -27,20 +27,15 @@ from requests.adapters import HTTPAdapter
 
 class BuildingFinder:
     OVERPASS_ENDPOINTS = [
-        "https://overpass-api.de/api/interpreter",
-        "https://lz4.overpass-api.de/api/interpreter",
-        "https://z.overpass-api.de/api/interpreter",
+        "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
         "https://overpass.kumi.systems/api/interpreter",
+        "https://overpass-api.de/api/interpreter",
     ]
 
     def __init__(self, polygon_area):
         self.polygon = polygon_area
         self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": "DataScrappingGoogleMapSE/1.0 (SLS-Overpass-Extractor)",
-            "Accept": "application/json, text/plain, */*",
-        })
-        retries = Retry(total=2, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+        retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
         adapter = HTTPAdapter(max_retries=retries)
         self.session.mount("https://", adapter)
         self.session.mount("http://", adapter)
@@ -65,7 +60,7 @@ class BuildingFinder:
                 resp = self.session.post(
                     endpoint,
                     data={"data": query},
-                    timeout=8,
+                    timeout=60,
                 )
                 if resp.status_code == 200:
                     data = resp.json()
