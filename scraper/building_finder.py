@@ -27,15 +27,20 @@ from requests.adapters import HTTPAdapter
 
 class BuildingFinder:
     OVERPASS_ENDPOINTS = [
-        "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
-        "https://overpass.kumi.systems/api/interpreter",
         "https://overpass-api.de/api/interpreter",
+        "https://lz4.overpass-api.de/api/interpreter",
+        "https://z.overpass-api.de/api/interpreter",
+        "https://overpass.kumi.systems/api/interpreter",
     ]
 
     def __init__(self, polygon_area):
         self.polygon = polygon_area
         self.session = requests.Session()
-        retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+        self.session.headers.update({
+            "User-Agent": "DataScrappingGoogleMapSE/1.0 (SLS-Overpass-Extractor)",
+            "Accept": "application/json, text/plain, */*",
+        })
+        retries = Retry(total=2, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
         adapter = HTTPAdapter(max_retries=retries)
         self.session.mount("https://", adapter)
         self.session.mount("http://", adapter)
@@ -60,7 +65,7 @@ class BuildingFinder:
                 resp = self.session.post(
                     endpoint,
                     data={"data": query},
-                    timeout=60,
+                    timeout=8,
                 )
                 if resp.status_code == 200:
                     data = resp.json()
@@ -88,6 +93,8 @@ class BuildingFinder:
         return buildings
 
     def _is_inside_polygon(self, lat, lng):
+        if hasattr(self.polygon, "contains_point"):
+            return self.polygon.contains_point(lat, lng)
         coords = self.polygon.coordinates
         pts = coords[:-1] if (len(coords) > 1 and coords[0] == coords[-1]) else coords
         n = len(pts)
