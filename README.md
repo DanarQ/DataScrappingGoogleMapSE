@@ -41,7 +41,7 @@ python main.py
 ```
 
 Wizard akan:
-1. Menampilkan daftar Kabupaten yang tersedia di `DataGeoJson/`.
+1. Menampilkan daftar Kabupaten yang tersedia di `DataGeoJson/` (Harus ada folder DataGeoJson contoh format Final_SLS_202516101.geojson).
 2. Memuat file GeoJSON dan menampilkan contoh SLS.
 3. Meminta input nomor SLS yang ingin diproses (contoh: `2`, `1-5`, atau `all`).
 
