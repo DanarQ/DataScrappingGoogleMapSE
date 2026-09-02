@@ -33,13 +33,17 @@ class DataExtractor:
             }
             buildings_data.append(entry)
 
-        data = {
+        data = {}
+        if hasattr(self.polygon, "metadata") and self.polygon.metadata:
+            data["metadata"] = self.polygon.metadata
+
+        data.update({
             "polygon": self.polygon.to_dict(),
             "bounding_box": self.polygon.get_bounding_box(),
             "overview_photo": overview_photo if (overview_photo and os.path.exists(overview_photo)) else "gak ada",
             "total_buildings": len(buildings_data),
             "buildings": buildings_data,
-        }
+        })
 
         os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
         with open(output_path, "w", encoding="utf-8") as f:

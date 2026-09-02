@@ -88,6 +88,8 @@ class BuildingFinder:
         return buildings
 
     def _is_inside_polygon(self, lat, lng):
+        if hasattr(self.polygon, "contains_point"):
+            return self.polygon.contains_point(lat, lng)
         coords = self.polygon.coordinates
         pts = coords[:-1] if (len(coords) > 1 and coords[0] == coords[-1]) else coords
         n = len(pts)

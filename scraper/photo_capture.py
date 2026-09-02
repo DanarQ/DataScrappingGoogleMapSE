@@ -13,11 +13,12 @@ class PhotoCapture:
         overview_file = os.path.join(output_dir, "overview_satellite.png")
         overview_path = None
 
-        if polygon and buildings:
+        if polygon:
             try:
-                print(f"\n[Overview] Capturing Consolidated Satellite Map for {len(buildings)} buildings...")
+                b_count = len(buildings) if buildings else 0
+                print(f"\n[Overview] Capturing Consolidated Satellite Map (Polygon Boundary + {b_count} buildings)...")
                 overview_path = self.driver.capture_overview(
-                    polygon, buildings, overview_file, zoom=self.zoom
+                    polygon, buildings or [], overview_file, zoom=self.zoom
                 )
                 time.sleep(self.delay)
             except Exception as e:

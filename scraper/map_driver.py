@@ -73,7 +73,7 @@ class MapDriver:
         self._dismiss_consent()
         time.sleep(5)
 
-        poly_points = polygon.coordinates
+        poly_points = polygon.polygons if hasattr(polygon, "polygons") else [polygon.coordinates]
         building_pins = [
             {"index": i + 1, "id": b.osm_id, "lat": b.lat, "lng": b.lng}
             for i, b in enumerate(buildings)
@@ -140,19 +140,22 @@ class MapDriver:
         svg.style.top = '0';
         svg.style.left = '0';
 
-        // 1. Draw Polygon Boundary
-        var polySvgPts = poly_points.map(function(p) {
-            var pt = project(p[0], p[1]);
-            return pt.x + ',' + pt.y;
-        }).join(' ');
+        // 1. Draw Polygon Boundary (supports single or multi-polygon)
+        var rings = Array.isArray(poly_points[0][0]) ? poly_points : [poly_points];
+        rings.forEach(function(ring) {
+            var polySvgPts = ring.map(function(p) {
+                var pt = project(p[0], p[1]);
+                return pt.x + ',' + pt.y;
+            }).join(' ');
 
-        var polygonEl = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
-        polygonEl.setAttribute('points', polySvgPts);
-        polygonEl.setAttribute('fill', 'rgba(0, 229, 255, 0.12)');
-        polygonEl.setAttribute('stroke', '#00E5FF');
-        polygonEl.setAttribute('stroke-width', '3');
-        polygonEl.setAttribute('stroke-dasharray', '8 4');
-        svg.appendChild(polygonEl);
+            var polygonEl = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+            polygonEl.setAttribute('points', polySvgPts);
+            polygonEl.setAttribute('fill', 'rgba(0, 229, 255, 0.12)');
+            polygonEl.setAttribute('stroke', '#00E5FF');
+            polygonEl.setAttribute('stroke-width', '3');
+            polygonEl.setAttribute('stroke-dasharray', '8 4');
+            svg.appendChild(polygonEl);
+        });
 
         // 2. Draw Building Numbered Pins
         building_pins.forEach(function(b) {
